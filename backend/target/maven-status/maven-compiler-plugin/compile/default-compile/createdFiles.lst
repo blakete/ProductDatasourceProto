@@ -1,0 +1,6 @@
+com/shopiq/backend/Item$1.class
+com/shopiq/backend/ItemJDBCRepository.class
+com/shopiq/backend/BackendApplication.class
+com/shopiq/backend/ItemJDBCRepository$ItemRowMapper.class
+com/shopiq/backend/ItemController.class
+com/shopiq/backend/Item.class
