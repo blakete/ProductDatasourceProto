@@ -21,7 +21,7 @@ public class Product {
     private String pictureURL;
 
     public Product() {
-
+        this.codes = new String[0];
     }
 
     public Product(String name, String[] codes, String category, String manufacturer) {
@@ -97,8 +97,11 @@ public class Product {
 
     public String toString() {
         String codes = "";
-        for (String code : this.codes)
-            codes += code + ", ";
+        for (int i=0; i < this.codes.length; i++){
+            if(this.codes[i]==null)
+                continue;
+            codes += this.codes[i] + ", ";
+        }
         return "name: " + this.name + ",\ncategory: " + this.category + ", \nmanufacturer: "
                 + this.manufacturer + ", \ncodes: " + codes;
     }

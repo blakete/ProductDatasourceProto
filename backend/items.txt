@@ -1,0 +1,242 @@
+name: Toe Warmer,3-1/2 in. X 2-3/4 in.,PR,
+category: Apparel & Accessories > Shoes,
+manufacturer: HeatMax,
+codes: UPC 094733100014, EAN 0094733100014,
+
+name: Sun Bum SPF 50 Sunscreen Lotion, 6 Oz | CVS,
+category: Personal Care > Cosmetics > Skin Care > Sunscreen,
+manufacturer: Sun Bum,
+codes: UPC 871760000452, EAN 0871760000452,
+
+name: CoverGirl & Olay Simply Ageless Foundation + Titanium Dioxide Broad Spectrum SPF 28 - 0.4 Oz,
+category: Personal Care > Cosmetics > Makeup > Face Makeup > Foundations & Concealers,
+manufacturer: COVERGIRL,
+codes: UPC 008100007882, EAN 0008100007882,
+
+name: Centrum Men, Complete Multivitamin/Multimineral Supplement Tablet - 200.0 Ea,
+category: Health Care > Fitness & Nutrition > Vitamins & Supplements,
+manufacturer: Centrum Ultra,
+codes: UPC 300054757708, EAN 0300054757708,
+
+name: Sour Patch Bunnies Movie Theater Box, 3.1 Ounce,
+category: Food, Beverages & Tobacco > Food Items > Candy & Chocolate,
+manufacturer: Sour Patch,
+codes: UPC 070462433838, EAN 0070462433838,
+
+Querying: 002490877483
+name: null,
+category: null,
+manufacturer: null,
+codes:
+
+Querying: 015000140007
+name: Gerber Pure Purified Water, 128 Oz | CVS,
+category: Outdoor Recreation > Camping & Hiking > Portable Water Filters & Purifiers,
+manufacturer: Nestle,
+codes: UPC 015000140007, EAN 0015000140007,
+
+Querying: 076314302994
+name: Emergen-C Dietary Supplement Fizzy Drink Mix with 1000mg Vitamin C 10pk - 0.32 Oz,
+category: Health Care > Fitness & Nutrition > Vitamins & Supplements,
+manufacturer: Alacer,
+codes: UPC 076314302994, EAN 0076314302994,
+
+Querying: 004490489269
+Unable to find: 004490489269
+400
+
+Querying: 044000028275
+name: BelVita Breakfast Biscuits Golden Oat - 8.8 Oz X 5 Pack,
+category: Food Items > Grains, Rice & Cereal > Cereal & Granola,
+manufacturer: Nabisco Belvita,
+codes: UPC 044000028275, EAN 0044000028275,
+
+Querying: 635985129981
+name: Mike's Hard Lemonade Variety - 11.2 Oz. X 12 Pack,
+category: Beverages > Alcoholic Beverages > Flavored Alcoholic Beverages,
+manufacturer: Mike's Hard Lemonade,
+codes: UPC 635985129981, EAN 0635985129981,
+
+Querying: 050428600290
+name: CVS Gold Emblem Lemonade, 64 Oz,
+category: Vehicle Parts & Accessories > Vehicle Maintenance, Care & Decor > Vehicle Decor > Vehicle Emblems & Hood Ornaments,
+manufacturer: CVS Gold Emblem,
+codes: UPC 050428600290, EAN 0050428600290,
+
+Querying: 031200210074
+name: Ocean Spray, Cran-apple, Juice Drink, Cranberry Apple,
+category: Food, Beverages & Tobacco > Beverages > Juice,
+manufacturer: Ocean Spray Cranberries, Inc.,
+codes: UPC 031200210074, EAN 0031200210074,
+
+Querying: 031200200075
+name: Ocean Spray, Cranberry Juice Cocktail,
+category: Food, Beverages & Tobacco > Beverages > Juice,
+manufacturer: Ocean Spray Cranberries, Inc.,
+codes: UPC 031200200075, EAN 0031200200075,
+
+Querying: 031200028761
+name: Ocean Spray Pink Cranberry Juice Cocktail 64 Oz | CVS,
+category: Home & Garden > Decor > Weather Vanes & Roof Decor,
+manufacturer: Ocean Spray,
+codes: UPC 031200028761, EAN 0031200028761,
+
+Querying: 004990286525
+Unable to find: 004990286525
+400
+
+Querying: 085000025871
+name: Barefoot Rose - 750.0 ML,
+category: Beverages > Alcoholic Beverages > Wine,
+manufacturer: Barefoot,
+codes: UPC 085000025871, EAN 0085000025871,
+
+Querying: 811955011016
+name: Aloe Vera Juice Drink,
+category: Food, Beverages & Tobacco > Beverages > Juice,
+manufacturer: Alo,
+codes: UPC 811955011016, EAN 0811955011016,
+
+Querying: 632565000012
+name: FIJI Natural Artesian Water, 500mL Bottle (Pack of 6),
+category: Food, Beverages & Tobacco > Beverages > Water,
+manufacturer: Fiji Water,
+codes: UPC 632565000012, EAN 0632565000012,
+
+Querying: 613008715267
+name: Green Tea,
+category: Food, Beverages & Tobacco > Beverages > Tea & Infusions,
+manufacturer: Ferolito Vultaggio & Sons,
+codes: UPC 613008715267, EAN 0613008715267,
+
+Querying: 010074630607
+name: null,
+category: null,
+manufacturer: null,
+codes:
+
+Querying: 070074630601
+name: Pedialyte AdvancedCare Electrolyte Solution Blue Raspberry - 33.8 Fl Oz,
+category: Toys > Activity Toys > Bubble Blowing Solution,
+manufacturer: Abbott Laboratories,ABBN7,
+codes: UPC 070074630601, EAN 0070074630601,
+
+Querying: 082592720153
+name: Naked, 100% Juice Smoothie, Green Machine,
+category: Food, Beverages & Tobacco > Beverages > Juice,
+manufacturer: Naked Juice,
+codes: UPC 082592720153, EAN 0082592720153,
+
+Querying: 048500202746
+name: KHFM00328384 Juice Orange Original, 52 Oz,
+category: Food, Beverages & Tobacco > Beverages > Juice,
+manufacturer: Tropicana,
+codes: UPC 048500202746, EAN 0048500202746,
+
+Querying: 041900076382
+name: Whole Milk Vitamin D,
+category: Food, Beverages & Tobacco > Beverages > Milk,
+manufacturer: Dean Foods Company,
+codes: UPC 041900076382, EAN 0041900076382,
+
+Querying: 041900076610
+name: 2% Reduced Fat Milk,
+category: Food, Beverages & Tobacco > Beverages > Milk,
+manufacturer: Dean Foods Company,
+codes: UPC 041900076610, EAN 0041900076610,
+
+Querying: 041900077020
+name: Fat Free Milk,
+category: Food, Beverages & Tobacco > Beverages > Milk,
+manufacturer: Dean Foods Company,
+codes: UPC 041900077020, EAN 0041900077020,
+
+Querying: 050000560240
+name: Nestle Coffee-Mate Liquid Coffee Creamer 16 OZ, Hazelnut | CVS,
+category: Food Items > Dairy Products > Coffee Creamer,
+manufacturer: Coffee-Mate,
+codes: UPC 050000560240, EAN 0050000560240,
+
+Querying: 017082876324
+name: Jack Link's, Peppered Beef Jerky Seasoned With Cracked Black Pepper,
+category: Food Items > Seasonings & Spices > Pepper,
+manufacturer: Link Snacks, Inc.,
+codes: UPC 017082876324, EAN 0017082876324,
+
+Querying: 027000372449
+name: Orville Redenbacher's Movie Theater Butter Popcorn, Classic Bag, 3 Count,
+category: Toys > Pretend Play > Pretend Shopping & Grocery,
+manufacturer: ConAgra Foods Sales, Inc.,
+codes: UPC 027000372449, EAN 0027000372449,
+
+Querying: 843571005780
+name: Popcorn, Indiana Kettlecorn - 8.0 Oz,
+category: Food, Beverages & Tobacco > Food Items > Nuts & Seeds,
+manufacturer: Popcorn, Indiana,
+codes: UPC 843571005780, EAN 0843571005780,
+
+Querying: 850251004001
+name: Popcorn,
+category: Food Items > Snack Foods > Trail & Snack Mixes,
+manufacturer: Skinnypop Popcorn Llc,
+codes: UPC 850251004001, EAN 0850251004001,
+
+Querying: 037000751014
+name: Tide Pods Ultra Oxi Liquid Detergent Pacs - 1.0 Oz X 12 Pack,
+category: Household Supplies > Laundry Supplies > Laundry Detergent,
+manufacturer: Procter & Gamble,
+codes: UPC 037000751014, EAN 0037000751014,
+
+Querying: 193033013632
+name: Foster Grant Ez2c Multizone Advanced Reading Glasses For Women +1.50,
+category: Health & Beauty > Personal Care > Vision Care,
+manufacturer: Foster Grant,
+codes: 0193033013632, 193033013632,
+
+Querying: 323900038158
+name: Vicks Nyquil Severe Cold & Flu Nighttime Relief Berry - 8.0 Fl Oz,
+category: Health & Beauty > Health Care > Medicine & Drugs,
+manufacturer: NyQuil,
+codes: UPC 323900038158, EAN 0323900038158,
+
+Querying: 050428102459
+name: KIRLIN 6ft PATCH CABLE CORDS, XLR Female To 1/4" TRS Black Cables 6' Balanced Snake Cord, 6 PACK PRO SERIES,
+category: Media > Music & Sound Recordings,
+manufacturer: Kirlin Industries Inc.,
+codes: UPC 050428102459, EAN 0050428102459,
+
+Querying: 009542031695
+name: Dark Chocolate,
+category: Food, Beverages & Tobacco > Food Items > Candy & Chocolate,
+manufacturer: Lindt & Sprungli (Schweiz) AG,
+codes: UPC 009542031695, EAN 0009542031695,
+
+Querying: 037466039411
+name: Lindt Excellence, Dark Chocolate, Dark,
+category: Food, Beverages & Tobacco > Food Items > Candy & Chocolate,
+manufacturer: Lindt & Sprungli (Schweiz) AG,
+codes: UPC 037466039411, EAN 0037466039411,
+
+Querying: 073010711334
+name: Tampax Pearl Unscented Tampons Triple Pack,
+category: Health & Beauty > Health Care > Incontinence Aids,
+manufacturer: Tampax,
+codes: UPC 073010711334, EAN 0073010711334,
+
+Querying: 012546917568
+name: Bubblicious Bubble Gum, (Strawberry, 18 Five-Count Packs),
+category: Food, Beverages & Tobacco > Food Items > Candy & Chocolate,
+manufacturer: Bubblicious,
+codes: UPC 012546917568, EAN 0012546917568,
+
+Querying: 859257003018
+name: PregPrep Complete Conception: Female Fertility Aid + Prenatal Vitamin for Women,
+category: Health Care > Fitness & Nutrition > Vitamins & Supplements,
+manufacturer: PregPrep LLC,
+codes: UPC 859257003018, EAN 0859257003018,
+
+Querying: 716222264044
+name: Wet Platinum Premium Concentrated Lubricant Serum Sultry Strawberry - 3.0 Oz.,
+category: Health & Beauty > Health Care > Medicine & Drugs,
+manufacturer: Trigg Laboratories Inc.,
+codes: UPC 716222264044, EAN 0716222264044,

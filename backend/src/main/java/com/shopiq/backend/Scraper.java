@@ -71,77 +71,72 @@ public class Scraper {
         return newProduct;
     }
     private Product queryUPCItemDB(String barcode) {
+        String lookup_url = "https://api.upcitemdb.com/prod/trial/lookup?upc=";
         BufferedReader input = null;
         HttpURLConnection connection = null;
         Product newProduct = new Product();
         if(barcode.length()!=12){
             newProduct.setStatusCode(400);
-            ErrorWriter.logError("[ERROR] Malformed barcode: " + barcode);
+            ErrorWriter.logError("[ERROR] Malformed barcode: " + barcode + "\n" + lookup_url + " expects a UPC barcode");
             return newProduct;
         }
         try {
-            String lookup_url = "https://api.upcitemdb.com/prod/trial/lookup?upc=";
             connection = (HttpURLConnection) new URL(lookup_url+barcode).openConnection();
             connection.setInstanceFollowRedirects(false);
             connection.connect();
-            try {
-                connection.getInputStream();
-                if (connection.getResponseCode() != HttpURLConnection.HTTP_OK) {
-                    String errorMsg = "Error in queryUPCItemDB\n";
-                    newProduct.setStatusCode(400);
-                    if(connection.getResponseCode() == 404){
-                        errorMsg+="[ERROR] Item not found\n";
-                        newProduct.setStatusCode(505);
-                    }else if(connection.getResponseCode() == 429)
-                    {
-                        errorMsg+="[ERROR] Request limit reached for UPCItemDB\n";
-                        newProduct.setStatusCode(505);
-                    }
-                    ErrorWriter.logError(errorMsg + "HTTP Response code: " + connection.getResponseCode() + "\nURL: " + (lookup_url + barcode));
-                    return newProduct;
-                }
-            }catch (Exception e)
-            {
-                ErrorWriter.logError("Error in queryUPCItemDB: " + e.getMessage());
-            }
+            connection.getInputStream();
             input = new BufferedReader(new InputStreamReader(connection.getInputStream()));
             String inputLine;
             String htmlPageStr = "";
             while ((inputLine = input.readLine()) != null)
                 htmlPageStr += inputLine + "\n";
-            JSONObject obj = new JSONObject(htmlPageStr);
-            String itemString = obj.get("items").toString();
-            JSONObject items = new JSONObject(itemString.substring(1, itemString.length() - 1));
-            String name = items.getString("title");
-            String category = items.getString("category");
-            String ean = items.getString("ean");
-            String upc = items.getString("upc");
-            String manufacturer = items.getString("brand");
-            String images = items.get("images").toString();
-            images = images.substring(1, images.length() - 1);
-            String[] imageUrl = images.split(",");
-            String[] codes = {ean, upc};
-            String pictureURL = "";
-            if (imageUrl.length > 0)
-                pictureURL = imageUrl[0];
-            newProduct.setName(name);
-            newProduct.setCodes(codes);
-            newProduct.setCategory(category);
-            newProduct.setManufacturer(manufacturer);
-            newProduct.setPictureURL(pictureURL); // todo verify the picture is a valid asynchronously
-            newProduct.setStatusCode(200); // status 405
-        }catch (IOException e){
-            newProduct.setStatusCode(405);
-            if(connection!=null){
-                try {
-                    int code = connection.getResponseCode();
-                    newProduct.setStatusCode(code);
-                }catch(Exception e2){}
+            try {
+                JSONObject obj = new JSONObject(htmlPageStr);
+                String itemString = obj.get("items").toString();
+                JSONObject items = new JSONObject(itemString.substring(1, itemString.length() - 1));
+                String name = items.getString("title");
+                String category = items.getString("category");
+                String ean = items.getString("ean");
+                String upc = items.getString("upc");
+                String manufacturer = items.getString("brand");
+                String images = items.get("images").toString();
+                images = images.substring(1, images.length() - 1);
+                String[] imageUrl = images.split(",");
+                String[] codes = {ean, upc};
+                String pictureURL = "";
+                if (imageUrl.length > 0)
+                    pictureURL = imageUrl[0];
+                newProduct.setName(name);
+                newProduct.setCodes(codes);
+                newProduct.setCategory(category);
+                newProduct.setManufacturer(manufacturer);
+                newProduct.setPictureURL(pictureURL); // todo verify the picture is a valid asynchronously
+                newProduct.setStatusCode(200); // status 405
+            }catch(Exception e){
+                newProduct.setStatusCode(405);
+                ErrorWriter.logError("[ERROR]: " + lookup_url + "; JSON object expected:\n" + e.getMessage());
             }
-            ErrorWriter.logError(e.getMessage());
         }catch (Exception e)
         {
-            //System.out.println(e.toString());
+            int repCode;
+            try{
+                repCode = connection.getResponseCode();
+            }catch (Exception ee) {
+                repCode = 400;
+            }
+            if (repCode != HttpURLConnection.HTTP_OK) {
+                String errorMsg = "Error in queryUPCItemDB\n";
+                newProduct.setStatusCode(400);
+                if (repCode == 404) {
+                    errorMsg += "\tItem not found\n";
+                    newProduct.setStatusCode(505);
+                } else if (repCode == 429) {
+                    errorMsg += "\tRequest limit reached for UPCItemDB\n";
+                    newProduct.setStatusCode(505);
+                }
+                ErrorWriter.logError(errorMsg + "\tHTTP Response code: " + repCode + "\n\tURL: " + (lookup_url + barcode));
+                return newProduct;
+            }
         }
         return newProduct;
     }
