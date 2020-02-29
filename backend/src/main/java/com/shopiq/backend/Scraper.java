@@ -60,7 +60,7 @@ public class Scraper {
             newProduct.setCategory(category);
             newProduct.setManufacturer(manufacturer);
             newProduct.setPictureURL(pictureURL); // todo verify the picture is a valid asynchronously
-            newProduct.setStatusCode(200); // status 405
+            newProduct.setStatusCode(200);
             // todo get the url to the image for download
         } catch (Exception e)
         {
@@ -72,6 +72,7 @@ public class Scraper {
     }
     private Product queryUPCItemDB(String barcode) {
         BufferedReader input = null;
+        HttpURLConnection connection = null;
         Product newProduct = new Product();
         if(barcode.length()!=12){
             newProduct.setStatusCode(400);
@@ -80,7 +81,7 @@ public class Scraper {
         }
         try {
             String lookup_url = "https://api.upcitemdb.com/prod/trial/lookup?upc=";
-            HttpURLConnection connection = (HttpURLConnection) new URL(lookup_url+barcode).openConnection();
+            connection = (HttpURLConnection) new URL(lookup_url+barcode).openConnection();
             connection.setInstanceFollowRedirects(false);
             connection.connect();
             try {
@@ -103,10 +104,7 @@ public class Scraper {
             {
                 ErrorWriter.logError("Error in queryUPCItemDB: " + e.getMessage());
             }
-            URL urlObject = new URL(lookup_url + barcode);
-            HttpURLConnection connection2 = (HttpURLConnection) urlObject.openConnection();
-            connection2.setReadTimeout(10000);
-            input = new BufferedReader(new InputStreamReader(connection2.getInputStream()));
+            input = new BufferedReader(new InputStreamReader(connection.getInputStream()));
             String inputLine;
             String htmlPageStr = "";
             while ((inputLine = input.readLine()) != null)
@@ -134,10 +132,16 @@ public class Scraper {
             newProduct.setStatusCode(200); // status 405
         }catch (IOException e){
             newProduct.setStatusCode(405);
+            if(connection!=null){
+                try {
+                    int code = connection.getResponseCode();
+                    newProduct.setStatusCode(code);
+                }catch(Exception e2){}
+            }
             ErrorWriter.logError(e.getMessage());
         }catch (Exception e)
         {
-            System.out.println(e.toString());
+            //System.out.println(e.toString());
         }
         return newProduct;
     }
