@@ -13,9 +13,9 @@ import java.net.URLEncoder;
 import java.util.Map;
 
 public class Main {
-    //public static final String[] barCodes = {"0885909950805", "075500000010", "079400446039", "855380004281", "681131143493", "681131039352",
-    //"855380004304", "855380004878", "011111062191", "037000786658", "009200300248", "009200293755"};
-    public static final String[] barCodes = {
+    public static final String[] barCodes = {"0885909950805", "075500000010", "079400446039", "855380004281", "681131143493", "681131039352",
+    "855380004304", "855380004878", "011111062191", "037000786658", "009200300248", "009200293755"};
+    /*public static final String[] barCodes = {
             "094733100014,,,,,,1,0.0,,2020-02-29 01:28:41,\n" +
             "871760000452,,,,,,1,0.0,,2020-02-29 01:28:28,\n" +
             "008100007882,,,,,,1,0.0,,2020-02-29 01:27:46,\n" +
@@ -58,15 +58,16 @@ public class Main {
             "012546917568,,,,,,1,0.0,,2020-02-29 01:18:13,\n" +
             "859257003018,,,,,,1,0.0,,2020-02-29 01:18:01,\n" +
             "716222264044,,,,,,1,0.0,,2020-02-29 01:17:47,"};
+            */
     public static void main(String[] args)
     {
-        String[] bc = barCodes[0].split("\n");
-        String[] bc2 = new String[bc.length];
-        for(int i=0; i<bc.length; i++)
-            bc2[i] = bc[i].split(",")[0];
+        //String[] bc = barCodes[0].split("\n");
+        //String[] bc2 = new String[bc.length];
+        //for(int i=0; i<bc.length; i++)
+        //    bc2[i] = bc[i].split(",")[0];
         Scraper scraper = new Scraper();
-        for(int i=1; i<42; i++){
-            String bCode = bc2[i];
+        for(int i=1; i<10; i++){
+            String bCode = barCodes[i];
             System.out.println("Querying: " + bCode);
             Product newProduct = scraper.queryProductInfo(bCode);
             if(newProduct.getStatusCode()==200) {

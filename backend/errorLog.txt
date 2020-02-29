@@ -1,698 +1,141 @@
-[2/28/2020 | 23:47.54483]
-[ERROR] Malformed barcode: 075800000010
-
-[2/28/2020 | 23:47.54636]
-Error in queryUPCItemDB: Server returned HTTP response code: 400 for URL: https://api.upcitemdb.com/prod/trial/lookup?upc=075800000010
-
-[2/28/2020 | 23:47.55728]
-Server returned HTTP response code: 400 for URL: https://api.upcitemdb.com/prod/trial/lookup?upc=075800000010
-
-[2/28/2020 | 23:50.35230]
-[ERROR] Malformed barcode: 075800000010
-
-[2/28/2020 | 23:50.35379]
-Error in queryUPCItemDB: Server returned HTTP response code: 400 for URL: https://api.upcitemdb.com/prod/trial/lookup?upc=075800000010
-
-[2/28/2020 | 23:50.36475]
-Server returned HTTP response code: 400 for URL: https://api.upcitemdb.com/prod/trial/lookup?upc=075800000010
-
-[2/29/2020 | 1:1.22454]
-[ERROR] Malformed barcode: 075800000010
-
-[2/29/2020 | 1:1.22801]
-Error in queryUPCItemDB: Server returned HTTP response code: 400 for URL: https://api.upcitemdb.com/prod/trial/lookup?upc=075800000010
-
-[2/29/2020 | 1:1.23801]
-Server returned HTTP response code: 400 for URL: https://api.upcitemdb.com/prod/trial/lookup?upc=075800000010
-
-[2/29/2020 | 1:3.48114]
-[ERROR] Malformed barcode: 075800000010
-
-[2/29/2020 | 1:3.48414]
-Error in queryUPCItemDB: Server returned HTTP response code: 400 for URL: https://api.upcitemdb.com/prod/trial/lookup?upc=075800000010
-
-[2/29/2020 | 1:3.49415]
-Server returned HTTP response code: 400 for URL: https://api.upcitemdb.com/prod/trial/lookup?upc=075800000010
-
-[2/29/2020 | 1:8.21926]
-[ERROR] Malformed barcode: 075800000010
-
-[2/29/2020 | 1:8.22237]
-Error in queryUPCItemDB: Server returned HTTP response code: 400 for URL: https://api.upcitemdb.com/prod/trial/lookup?upc=075800000010
-
-[2/29/2020 | 1:8.23240]
-Server returned HTTP response code: 400 for URL: https://api.upcitemdb.com/prod/trial/lookup?upc=075800000010
-
-[2/29/2020 | 1:8.24521]
-HTTP error fetching URL
-
-[2/29/2020 | 1:8.25868]
-HTTP error fetching URL
-
-[2/29/2020 | 1:11.5608]
-[ERROR] Malformed barcode: 075800000010
-
-[2/29/2020 | 1:11.5923]
-Error in queryUPCItemDB: Server returned HTTP response code: 400 for URL: https://api.upcitemdb.com/prod/trial/lookup?upc=075800000010
-
-[2/29/2020 | 1:11.7172]
-Server returned HTTP response code: 400 for URL: https://api.upcitemdb.com/prod/trial/lookup?upc=075800000010
-
-[2/29/2020 | 1:11.8581]
-HTTP error fetching URL
-
-[2/29/2020 | 1:11.9976]
-HTTP error fetching URL
-
-[2/29/2020 | 1:11.1293]
-HTTP error fetching URL
-
-[2/29/2020 | 1:11.12755]
-Error in queryUPCItemDB: Server returned HTTP response code: 429 for URL: https://api.upcitemdb.com/prod/trial/lookup?upc=855380004304
-
-[2/29/2020 | 1:11.13892]
-Server returned HTTP response code: 429 for URL: https://api.upcitemdb.com/prod/trial/lookup?upc=855380004304
-
-[2/29/2020 | 1:11.1481]
-HTTP error fetching URL
-
-[2/29/2020 | 1:11.14755]
-Error in queryUPCItemDB: Server returned HTTP response code: 429 for URL: https://api.upcitemdb.com/prod/trial/lookup?upc=855380004878
-
-[2/29/2020 | 1:11.15760]
-Server returned HTTP response code: 429 for URL: https://api.upcitemdb.com/prod/trial/lookup?upc=855380004878
-
-[2/29/2020 | 1:11.15976]
-HTTP error fetching URL
-
-[2/29/2020 | 1:11.16773]
-Error in queryUPCItemDB: Server returned HTTP response code: 429 for URL: https://api.upcitemdb.com/prod/trial/lookup?upc=011111062191
-
-[2/29/2020 | 1:11.1854]
-Server returned HTTP response code: 429 for URL: https://api.upcitemdb.com/prod/trial/lookup?upc=011111062191
-
-[2/29/2020 | 1:11.18280]
-HTTP error fetching URL
-
-[2/29/2020 | 1:11.18280]
-[ERROR] Malformed barcode: 03700786658
-
-[2/29/2020 | 1:13.24928]
-[ERROR] Malformed barcode: 075800000010
-
-[2/29/2020 | 1:13.25276]
-Error in queryUPCItemDB: Server returned HTTP response code: 400 for URL: https://api.upcitemdb.com/prod/trial/lookup?upc=075800000010
-
-[2/29/2020 | 1:13.26280]
-Server returned HTTP response code: 400 for URL: https://api.upcitemdb.com/prod/trial/lookup?upc=075800000010
-
-[2/29/2020 | 1:13.27408]
-HTTP error fetching URL
-
-[2/29/2020 | 1:13.28773]
-HTTP error fetching URL
-
-[2/29/2020 | 1:13.30788]
-HTTP error fetching URL
-
-[2/29/2020 | 1:13.31605]
-Error in queryUPCItemDB: Server returned HTTP response code: 429 for URL: https://api.upcitemdb.com/prod/trial/lookup?upc=855380004304
-
-[2/29/2020 | 1:13.32599]
-Server returned HTTP response code: 429 for URL: https://api.upcitemdb.com/prod/trial/lookup?upc=855380004304
-
-[2/29/2020 | 1:13.32789]
-HTTP error fetching URL
-
-[2/29/2020 | 1:13.33600]
-Error in queryUPCItemDB: Server returned HTTP response code: 429 for URL: https://api.upcitemdb.com/prod/trial/lookup?upc=855380004878
-
-[2/29/2020 | 1:13.34605]
-Server returned HTTP response code: 429 for URL: https://api.upcitemdb.com/prod/trial/lookup?upc=855380004878
-
-[2/29/2020 | 1:13.34769]
-HTTP error fetching URL
-
-[2/29/2020 | 1:13.35600]
-Error in queryUPCItemDB: Server returned HTTP response code: 429 for URL: https://api.upcitemdb.com/prod/trial/lookup?upc=011111062191
-
-[2/29/2020 | 1:13.36613]
-Server returned HTTP response code: 429 for URL: https://api.upcitemdb.com/prod/trial/lookup?upc=011111062191
-
-[2/29/2020 | 1:13.36777]
-HTTP error fetching URL
-
-[2/29/2020 | 1:13.37617]
-Error in queryUPCItemDB: Server returned HTTP response code: 429 for URL: https://api.upcitemdb.com/prod/trial/lookup?upc=037000786658
-
-[2/29/2020 | 1:13.38855]
-Server returned HTTP response code: 429 for URL: https://api.upcitemdb.com/prod/trial/lookup?upc=037000786658
-
-[2/29/2020 | 1:13.3956]
-HTTP error fetching URL
-
-[2/29/2020 | 1:13.39804]
-Error in queryUPCItemDB: Server returned HTTP response code: 429 for URL: https://api.upcitemdb.com/prod/trial/lookup?upc=009200300248
-
-[2/29/2020 | 1:13.40774]
-Server returned HTTP response code: 429 for URL: https://api.upcitemdb.com/prod/trial/lookup?upc=009200300248
-
-[2/29/2020 | 1:13.40982]
-HTTP error fetching URL
-
-[2/29/2020 | 1:13.41736]
-Error in queryUPCItemDB: Server returned HTTP response code: 429 for URL: https://api.upcitemdb.com/prod/trial/lookup?upc=009200293755
-
-[2/29/2020 | 1:13.42601]
-Server returned HTTP response code: 429 for URL: https://api.upcitemdb.com/prod/trial/lookup?upc=009200293755
-
-[2/29/2020 | 1:16.40477]
-[ERROR] Malformed barcode: 075800000010
-
-[2/29/2020 | 1:16.40842]
-Error in queryUPCItemDB: Server returned HTTP response code: 400 for URL: https://api.upcitemdb.com/prod/trial/lookup?upc=075800000010
-
-[2/29/2020 | 1:16.40842]
-Server returned HTTP response code: 400 for URL: https://api.upcitemdb.com/prod/trial/lookup?upc=075800000010
-
-[2/29/2020 | 1:16.42533]
-HTTP error fetching URL
-
-[2/29/2020 | 1:16.42922]
-HTTP error fetching URL
-
-[2/29/2020 | 1:16.43917]
-HTTP error fetching URL
-
-[2/29/2020 | 1:16.44900]
-HTTP error fetching URL
-
-[2/29/2020 | 1:16.45896]
-HTTP error fetching URL
-
-[2/29/2020 | 1:16.47185]
-HTTP error fetching URL
-
-[2/29/2020 | 1:16.47711]
-Error in queryUPCItemDB: Server returned HTTP response code: 429 for URL: https://api.upcitemdb.com/prod/trial/lookup?upc=009200300248
-
-[2/29/2020 | 1:16.47711]
-Server returned HTTP response code: 429 for URL: https://api.upcitemdb.com/prod/trial/lookup?upc=009200300248
-
-[2/29/2020 | 1:16.47913]
-HTTP error fetching URL
-
-[2/29/2020 | 1:16.48934]
-Error in queryUPCItemDB: Server returned HTTP response code: 429 for URL: https://api.upcitemdb.com/prod/trial/lookup?upc=009200293755
-
-[2/29/2020 | 1:16.48934]
-Server returned HTTP response code: 429 for URL: https://api.upcitemdb.com/prod/trial/lookup?upc=009200293755
-
-[2/29/2020 | 1:21.43253]
-HTTP error fetching URL
-
-[2/29/2020 | 1:21.43800]
-HTTP error fetching URL
-
-[2/29/2020 | 1:21.44774]
-HTTP error fetching URL
-
-[2/29/2020 | 1:21.4691]
-HTTP error fetching URL
-
-[2/29/2020 | 1:21.46788]
-HTTP error fetching URL
-
-[2/29/2020 | 1:21.47804]
-HTTP error fetching URL
-
-[2/29/2020 | 1:21.4987]
-HTTP error fetching URL
-
-[2/29/2020 | 1:21.49593]
-Error in queryUPCItemDB: Server returned HTTP response code: 429 for URL: https://api.upcitemdb.com/prod/trial/lookup?upc=009200293755
-
-[2/29/2020 | 1:21.49593]
-Server returned HTTP response code: 429 for URL: https://api.upcitemdb.com/prod/trial/lookup?upc=009200293755
-
-[2/29/2020 | 1:23.350]
-HTTP error fetching URL
-
-[2/29/2020 | 1:23.3517]
-HTTP error fetching URL
-
-[2/29/2020 | 1:23.4528]
-HTTP error fetching URL
-
-[2/29/2020 | 1:23.5508]
-HTTP error fetching URL
-
-[2/29/2020 | 1:23.6537]
-HTTP error fetching URL
-
-[2/29/2020 | 1:23.7559]
-HTTP error fetching URL
-
-[2/29/2020 | 1:23.8532]
-HTTP error fetching URL
-
-[2/29/2020 | 1:23.9333]
-Error in queryUPCItemDB: Server returned HTTP response code: 429 for URL: https://api.upcitemdb.com/prod/trial/lookup?upc=009200293755
-
-[2/29/2020 | 1:23.9333]
-Server returned HTTP response code: 429 for URL: https://api.upcitemdb.com/prod/trial/lookup?upc=009200293755
-
-[2/29/2020 | 1:29.21467]
-HTTP error fetching URL
-
-[2/29/2020 | 1:29.21998]
-HTTP error fetching URL
-
-[2/29/2020 | 1:29.2312]
-HTTP error fetching URL
-
-[2/29/2020 | 1:29.23990]
-HTTP error fetching URL
-
-[2/29/2020 | 1:29.24992]
-HTTP error fetching URL
-
-[2/29/2020 | 1:29.25987]
-HTTP error fetching URL
-
-[2/29/2020 | 1:29.58576]
-HTTP error fetching URL
-
-[2/29/2020 | 1:29.58854]
-Error in queryUPCItemDB: Server returned HTTP response code: 429 for URL: https://api.upcitemdb.com/prod/trial/lookup?upc=681131039352
-
-[2/29/2020 | 1:29.58854]
-Server returned HTTP response code: 429 for URL: https://api.upcitemdb.com/prod/trial/lookup?upc=681131039352
-
-[2/29/2020 | 1:29.5934]
-HTTP error fetching URL
-
-[2/29/2020 | 1:29.59970]
-Error in queryUPCItemDB: Server returned HTTP response code: 429 for URL: https://api.upcitemdb.com/prod/trial/lookup?upc=855380004304
-
-[2/29/2020 | 1:29.59970]
-Server returned HTTP response code: 429 for URL: https://api.upcitemdb.com/prod/trial/lookup?upc=855380004304
-
-[2/29/2020 | 1:30.0203]
-HTTP error fetching URL
-
-[2/29/2020 | 1:30.0932]
-Error in queryUPCItemDB: Server returned HTTP response code: 429 for URL: https://api.upcitemdb.com/prod/trial/lookup?upc=855380004878
-
-[2/29/2020 | 1:30.0932]
-Server returned HTTP response code: 429 for URL: https://api.upcitemdb.com/prod/trial/lookup?upc=855380004878
-
-[2/29/2020 | 1:30.1122]
-HTTP error fetching URL
-
-[2/29/2020 | 1:30.1891]
-Error in queryUPCItemDB: Server returned HTTP response code: 429 for URL: https://api.upcitemdb.com/prod/trial/lookup?upc=011111062191
-
-[2/29/2020 | 1:30.1900]
-Server returned HTTP response code: 429 for URL: https://api.upcitemdb.com/prod/trial/lookup?upc=011111062191
-
-[2/29/2020 | 1:30.287]
-HTTP error fetching URL
-
-[2/29/2020 | 1:30.2890]
-Error in queryUPCItemDB: Server returned HTTP response code: 429 for URL: https://api.upcitemdb.com/prod/trial/lookup?upc=037000786658
-
-[2/29/2020 | 1:30.2890]
-Server returned HTTP response code: 429 for URL: https://api.upcitemdb.com/prod/trial/lookup?upc=037000786658
-
-[2/29/2020 | 1:30.3125]
-HTTP error fetching URL
-
-[2/29/2020 | 1:30.3853]
-Error in queryUPCItemDB: Server returned HTTP response code: 429 for URL: https://api.upcitemdb.com/prod/trial/lookup?upc=009200300248
-
-[2/29/2020 | 1:30.3853]
-Server returned HTTP response code: 429 for URL: https://api.upcitemdb.com/prod/trial/lookup?upc=009200300248
-
-[2/29/2020 | 1:30.419]
-HTTP error fetching URL
-
-[2/29/2020 | 1:30.4863]
-Error in queryUPCItemDB: Server returned HTTP response code: 429 for URL: https://api.upcitemdb.com/prod/trial/lookup?upc=009200293755
-
-[2/29/2020 | 1:30.4863]
-Server returned HTTP response code: 429 for URL: https://api.upcitemdb.com/prod/trial/lookup?upc=009200293755
-
-[2/29/2020 | 1:40.33393]
-null
-
-[2/29/2020 | 1:40.33436]
-[ERROR] Malformed barcode: Name
-
-[2/29/2020 | 1:41.46821]
-null
-
-[2/29/2020 | 1:41.47241]
-A JSONObject text must begin with '{' at 0 [character 1 line 1]
-
-[2/29/2020 | 1:42.27848]
-null
-
-[2/29/2020 | 1:42.28140]
-A JSONObject text must begin with '{' at 0 [character 1 line 1]
-
-[2/29/2020 | 1:44.11584]
-null
-
-[2/29/2020 | 1:44.11999]
-A JSONObject text must begin with '{' at 0 [character 1 line 1]
-
-[2/29/2020 | 1:44.45445]
-null
-
-[2/29/2020 | 1:44.45756]
-A JSONObject text must begin with '{' at 0 [character 1 line 1]
-
-[2/29/2020 | 1:44.47629]
-[ERROR] Malformed barcode: 004490489269
-
-[2/29/2020 | 1:44.47684]
-Error in queryUPCItemDB: Server returned HTTP response code: 400 for URL: https://api.upcitemdb.com/prod/trial/lookup?upc=004490489269
-
-[2/29/2020 | 1:44.47685]
-Server returned HTTP response code: 400 for URL: https://api.upcitemdb.com/prod/trial/lookup?upc=004490489269
-
-[2/29/2020 | 1:45.33497]
-[ERROR] Malformed barcode: 004990286525
-
-[2/29/2020 | 1:45.33808]
-Error in queryUPCItemDB: Server returned HTTP response code: 400 for URL: https://api.upcitemdb.com/prod/trial/lookup?upc=004990286525
-
-[2/29/2020 | 1:45.33809]
-Server returned HTTP response code: 400 for URL: https://api.upcitemdb.com/prod/trial/lookup?upc=004990286525
-
-[2/29/2020 | 1:45.5525]
-null
-
-[2/29/2020 | 1:45.55349]
-A JSONObject text must begin with '{' at 0 [character 1 line 1]
-
-[2/29/2020 | 1:46.40785]
-null
-
-[2/29/2020 | 1:56.32670]
-null
-
-[2/29/2020 | 1:56.3317]
-A JSONObject text must begin with '{' at 0 [character 1 line 1]
-
-[2/29/2020 | 1:57.24643]
-null
-
-[2/29/2020 | 1:57.24959]
-A JSONObject text must begin with '{' at 0 [character 1 line 1]
-
-[2/29/2020 | 1:57.56962]
-null
-
-[2/29/2020 | 1:57.57265]
-A JSONObject text must begin with '{' at 0 [character 1 line 1]
-
-[2/29/2020 | 1:58.58385]
-null
-
-[2/29/2020 | 1:58.58702]
-A JSONObject text must begin with '{' at 0 [character 1 line 1]
-
-[2/29/2020 | 1:59.39190]
-null
-
-[2/29/2020 | 1:59.39506]
-A JSONObject text must begin with '{' at 0 [character 1 line 1]
-
-[2/29/2020 | 2:0.10342]
-null
-
-[2/29/2020 | 2:0.10679]
-A JSONObject text must begin with '{' at 0 [character 1 line 1]
-
-[2/29/2020 | 2:0.24679]
-null
-
-[2/29/2020 | 2:0.24990]
-A JSONObject text must begin with '{' at 0 [character 1 line 1]
-
-[2/29/2020 | 2:1.1375]
-null
-
-[2/29/2020 | 2:1.13378]
-A JSONObject text must begin with '{' at 0 [character 1 line 1]
-
-[2/29/2020 | 2:1.40949]
-null
-
-[2/29/2020 | 2:1.41302]
-A JSONObject text must begin with '{' at 0 [character 1 line 1]
-
-[2/29/2020 | 2:3.12114]
-null
-
-[2/29/2020 | 2:3.12406]
-A JSONObject text must begin with '{' at 0 [character 1 line 1]
-
-[2/29/2020 | 2:3.47734]
-null
-
-[2/29/2020 | 2:3.4816]
-A JSONObject text must begin with '{' at 0 [character 1 line 1]
-
-[2/29/2020 | 14:2.7644]
-null
-
-[2/29/2020 | 14:2.823]
-[ERROR]: https://api.upcitemdb.com/prod/trial/lookup?upc=; JSON object expected:
-A JSONObject text must begin with '{' at 0 [character 1 line 1]
-
-[2/29/2020 | 14:2.8186]
-HTTP error fetching URL
-
-[2/29/2020 | 14:2.9414]
-HTTP error fetching URL
-
-[2/29/2020 | 14:2.10344]
-HTTP error fetching URL
-
-[2/29/2020 | 14:2.11134]
-Error in queryUPCItemDB: Server returned HTTP response code: 400 for URL: https://api.upcitemdb.com/prod/trial/lookup?upc=004490489269
-
-[2/29/2020 | 14:2.11135]
-Server returned HTTP response code: 400 for URL: https://api.upcitemdb.com/prod/trial/lookup?upc=004490489269
-
-[2/29/2020 | 14:2.11329]
-HTTP error fetching URL
-
-[2/29/2020 | 14:2.12281]
-HTTP error fetching URL
-
-[2/29/2020 | 14:2.13247]
-HTTP error fetching URL
-
-[2/29/2020 | 14:2.1414]
-Error in queryUPCItemDB: Server returned HTTP response code: 429 for URL: https://api.upcitemdb.com/prod/trial/lookup?upc=050428600290
-
-[2/29/2020 | 14:2.1415]
-Server returned HTTP response code: 429 for URL: https://api.upcitemdb.com/prod/trial/lookup?upc=050428600290
-
-[2/29/2020 | 14:2.14188]
-HTTP error fetching URL
-
-[2/29/2020 | 14:2.15293]
-Error in queryUPCItemDB: Server returned HTTP response code: 429 for URL: https://api.upcitemdb.com/prod/trial/lookup?upc=031200210074
-
-[2/29/2020 | 14:2.15294]
-Server returned HTTP response code: 429 for URL: https://api.upcitemdb.com/prod/trial/lookup?upc=031200210074
-
-[2/29/2020 | 14:2.15459]
-HTTP error fetching URL
-
-[2/29/2020 | 14:2.16254]
-Error in queryUPCItemDB: Server returned HTTP response code: 429 for URL: https://api.upcitemdb.com/prod/trial/lookup?upc=031200200075
-
-[2/29/2020 | 14:2.16255]
-Server returned HTTP response code: 429 for URL: https://api.upcitemdb.com/prod/trial/lookup?upc=031200200075
-
-[2/29/2020 | 14:2.16464]
-HTTP error fetching URL
-
-[2/29/2020 | 14:2.17204]
-Error in queryUPCItemDB: Server returned HTTP response code: 429 for URL: https://api.upcitemdb.com/prod/trial/lookup?upc=031200028761
-
-[2/29/2020 | 14:2.17205]
-Server returned HTTP response code: 429 for URL: https://api.upcitemdb.com/prod/trial/lookup?upc=031200028761
-
-[2/29/2020 | 14:2.17402]
-HTTP error fetching URL
-
-[2/29/2020 | 14:2.18175]
-Error in queryUPCItemDB: Server returned HTTP response code: 429 for URL: https://api.upcitemdb.com/prod/trial/lookup?upc=004990286525
-
-[2/29/2020 | 14:2.18175]
-Server returned HTTP response code: 429 for URL: https://api.upcitemdb.com/prod/trial/lookup?upc=004990286525
-
-[2/29/2020 | 14:2.18355]
-HTTP error fetching URL
-
-[2/29/2020 | 14:6.1527]
-null
-
-[2/29/2020 | 14:6.15333]
-[ERROR]: https://api.upcitemdb.com/prod/trial/lookup?upc=; JSON object expected:
-A JSONObject text must begin with '{' at 0 [character 1 line 1]
-
-[2/29/2020 | 14:6.15538]
-HTTP error fetching URL
-
-[2/29/2020 | 14:6.16786]
-HTTP error fetching URL
-
-[2/29/2020 | 14:6.17743]
-HTTP error fetching URL
-
-[2/29/2020 | 14:6.18508]
-Server returned HTTP response code: 400 for URL: https://api.upcitemdb.com/prod/trial/lookup?upc=004490489269
-
-[2/29/2020 | 14:6.18739]
-HTTP error fetching URL
-
-[2/29/2020 | 14:6.19672]
-HTTP error fetching URL
-
-[2/29/2020 | 14:6.20639]
-HTTP error fetching URL
-
-[2/29/2020 | 14:6.21388]
-Server returned HTTP response code: 429 for URL: https://api.upcitemdb.com/prod/trial/lookup?upc=050428600290
-
-[2/29/2020 | 14:6.21576]
-HTTP error fetching URL
-
-[2/29/2020 | 14:6.22348]
-Server returned HTTP response code: 429 for URL: https://api.upcitemdb.com/prod/trial/lookup?upc=031200210074
-
-[2/29/2020 | 14:6.22579]
-HTTP error fetching URL
-
-[2/29/2020 | 14:6.23628]
-Server returned HTTP response code: 429 for URL: https://api.upcitemdb.com/prod/trial/lookup?upc=031200200075
-
-[2/29/2020 | 14:6.23827]
-HTTP error fetching URL
-
-[2/29/2020 | 14:6.24589]
-Server returned HTTP response code: 429 for URL: https://api.upcitemdb.com/prod/trial/lookup?upc=031200028761
-
-[2/29/2020 | 14:6.5845]
-null
-
-[2/29/2020 | 14:6.58379]
-Error in queryUPCItemDB
-[ERROR] Request limit reached for UPCItemDB
-HTTP Response code: 429
-URL: https://api.upcitemdb.com/prod/trial/lookup?upc=002490877483
-
-[2/29/2020 | 14:6.58576]
-HTTP error fetching URL
-
-[2/29/2020 | 14:6.59612]
-Error in queryUPCItemDB
-[ERROR] Request limit reached for UPCItemDB
-HTTP Response code: 429
-URL: https://api.upcitemdb.com/prod/trial/lookup?upc=015000140007
-
-[2/29/2020 | 14:6.59779]
-HTTP error fetching URL
-
-[2/29/2020 | 14:7.0573]
-Error in queryUPCItemDB
-[ERROR] Request limit reached for UPCItemDB
-HTTP Response code: 429
-URL: https://api.upcitemdb.com/prod/trial/lookup?upc=076314302994
-
-[2/29/2020 | 14:7.0902]
-HTTP error fetching URL
-
-[2/29/2020 | 14:7.1540]
-Error in queryUPCItemDB
-[ERROR] Request limit reached for UPCItemDB
-HTTP Response code: 429
-URL: https://api.upcitemdb.com/prod/trial/lookup?upc=004490489269
-
-[2/29/2020 | 14:7.1711]
-HTTP error fetching URL
-
-[2/29/2020 | 14:7.2481]
-Error in queryUPCItemDB
-[ERROR] Request limit reached for UPCItemDB
-HTTP Response code: 429
-URL: https://api.upcitemdb.com/prod/trial/lookup?upc=044000028275
-
-[2/29/2020 | 14:7.2670]
-HTTP error fetching URL
-
-[2/29/2020 | 14:8.1992]
-null
-
-[2/29/2020 | 14:8.19411]
-[ERROR]: https://api.upcitemdb.com/prod/trial/lookup?upc=; JSON object expected:
-A JSONObject text must begin with '{' at 0 [character 1 line 1]
-
-[2/29/2020 | 14:8.19590]
-HTTP error fetching URL
-
-[2/29/2020 | 14:8.20813]
-HTTP error fetching URL
-
-[2/29/2020 | 14:8.21789]
-HTTP error fetching URL
-
-[2/29/2020 | 14:8.22570]
-Error in queryUPCItemDB
-	HTTP Response code: 400
-	URL: https://api.upcitemdb.com/prod/trial/lookup?upc=004490489269
-
-[2/29/2020 | 14:8.22819]
-HTTP error fetching URL
-
-[2/29/2020 | 14:8.23782]
-HTTP error fetching URL
-
-[2/29/2020 | 14:8.24654]
-HTTP error fetching URL
-
-[2/29/2020 | 14:8.25451]
+[2/29/2020 | 14:40.25395]
 Error in queryUPCItemDB
 	Request limit reached for UPCItemDB
 	HTTP Response code: 429
-	URL: https://api.upcitemdb.com/prod/trial/lookup?upc=050428600290
+	URL: https://api.upcitemdb.com/prod/trial/lookup?upc=871760000452
 
-[2/29/2020 | 14:8.25634]
-HTTP error fetching URL
-
-[2/29/2020 | 14:8.26411]
+[2/29/2020 | 14:40.26412]
 Error in queryUPCItemDB
 	Request limit reached for UPCItemDB
 	HTTP Response code: 429
-	URL: https://api.upcitemdb.com/prod/trial/lookup?upc=031200210074
+	URL: https://api.upcitemdb.com/prod/trial/lookup?upc=008100007882
 
-[2/29/2020 | 14:8.26630]
-HTTP error fetching URL
-
-[2/29/2020 | 14:8.27692]
+[2/29/2020 | 14:40.27422]
 Error in queryUPCItemDB
 	Request limit reached for UPCItemDB
 	HTTP Response code: 429
-	URL: https://api.upcitemdb.com/prod/trial/lookup?upc=031200200075
+	URL: https://api.upcitemdb.com/prod/trial/lookup?upc=300054757708
 
-[2/29/2020 | 14:8.27869]
+[2/29/2020 | 14:40.28413]
+Error in queryUPCItemDB
+	Request limit reached for UPCItemDB
+	HTTP Response code: 429
+	URL: https://api.upcitemdb.com/prod/trial/lookup?upc=070462433838
+
+[2/29/2020 | 14:40.2955]
+null
+
+[2/29/2020 | 14:40.29405]
+Error in queryUPCItemDB
+	Request limit reached for UPCItemDB
+	HTTP Response code: 429
+	URL: https://api.upcitemdb.com/prod/trial/lookup?upc=002490877483
+
+[2/29/2020 | 14:40.29601]
 HTTP error fetching URL
+
+[2/29/2020 | 14:40.30615]
+Error in queryUPCItemDB
+	Request limit reached for UPCItemDB
+	HTTP Response code: 429
+	URL: https://api.upcitemdb.com/prod/trial/lookup?upc=015000140007
+
+[2/29/2020 | 14:40.30800]
+HTTP error fetching URL
+
+[2/29/2020 | 14:40.31413]
+Error in queryUPCItemDB
+	Request limit reached for UPCItemDB
+	HTTP Response code: 429
+	URL: https://api.upcitemdb.com/prod/trial/lookup?upc=076314302994
+
+[2/29/2020 | 14:40.31605]
+HTTP error fetching URL
+
+[2/29/2020 | 14:42.3844]
+null
+
+[2/29/2020 | 14:42.4182]
+Error in queryUPCItemDB
+	Request limit reached for UPCItemDB
+	HTTP Response code: 429
+	URL: https://api.upcitemdb.com/prod/trial/lookup?upc=002490877483
+
+[2/29/2020 | 14:42.5606]
+HTTP error fetching URL
+
+[2/29/2020 | 14:42.5779]
+Error in queryUPCItemDB
+	Request limit reached for UPCItemDB
+	HTTP Response code: 429
+	URL: https://api.upcitemdb.com/prod/trial/lookup?upc=076314302994
+
+[2/29/2020 | 14:42.5973]
+HTTP error fetching URL
+
+[2/29/2020 | 14:44.14862]
+null
+
+[2/29/2020 | 14:44.15249]
+Error in queryUPCItemDB
+	Request limit reached for UPCItemDB
+	HTTP Response code: 429
+	URL: https://api.upcitemdb.com/prod/trial/lookup?upc=002490877483
+
+[2/29/2020 | 14:44.15446]
+HTTP error fetching URL
+
+[2/29/2020 | 14:44.16408]
+Error in queryUPCItemDB
+	Request limit reached for UPCItemDB
+	HTTP Response code: 429
+	URL: https://api.upcitemdb.com/prod/trial/lookup?upc=015000140007
+
+[2/29/2020 | 14:44.16584]
+HTTP error fetching URL
+
+[2/29/2020 | 14:44.17368]
+Error in queryUPCItemDB
+	Request limit reached for UPCItemDB
+	HTTP Response code: 429
+	URL: https://api.upcitemdb.com/prod/trial/lookup?upc=076314302994
+
+[2/29/2020 | 14:44.17544]
+HTTP error fetching URL
+
+[2/29/2020 | 14:45.17769]
+HTTP error fetching URL
+
+[2/29/2020 | 14:45.1887]
+Error in queryUPCItemDB
+	Request limit reached for UPCItemDB
+	HTTP Response code: 429
+	URL: https://api.upcitemdb.com/prod/trial/lookup?upc=855380004304
+
+[2/29/2020 | 14:45.18308]
+HTTP error fetching URL
+
+[2/29/2020 | 14:45.19167]
+Error in queryUPCItemDB
+	Request limit reached for UPCItemDB
+	HTTP Response code: 429
+	URL: https://api.upcitemdb.com/prod/trial/lookup?upc=855380004878
+
+[2/29/2020 | 14:45.19420]
+HTTP error fetching URL
+
+[2/29/2020 | 14:45.20135]
+Error in queryUPCItemDB
+	Request limit reached for UPCItemDB
+	HTTP Response code: 429
+	URL: https://api.upcitemdb.com/prod/trial/lookup?upc=011111062191
+
+[2/29/2020 | 14:45.20325]
+HTTP error fetching URL
+
+[2/29/2020 | 14:45.21400]
+Error in queryUPCItemDB
+	Request limit reached for UPCItemDB
+	HTTP Response code: 429
+	URL: https://api.upcitemdb.com/prod/trial/lookup?upc=037000786658
 

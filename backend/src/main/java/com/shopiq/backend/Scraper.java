@@ -6,15 +6,14 @@ import org.json.JSONObject;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
+import java.io.*;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
 public class Scraper {
 
     //    private Gson gson = new Gson();
+    public static final String imageDirectory = "Images/";
     private Gson gson = new GsonBuilder().disableHtmlEscaping().create();
 
     public Product queryProductInfo(String barcode) {
@@ -55,6 +54,7 @@ public class Scraper {
                     newProduct.setEan(codes[i].substring(4));
                 }
             }
+            saveImage(pictureURL, imageDirectory, name);
             newProduct.setName(name);
             newProduct.setCodes(codes);
             newProduct.setCategory(category);
@@ -75,26 +75,26 @@ public class Scraper {
         BufferedReader input = null;
         HttpURLConnection connection = null;
         Product newProduct = new Product();
-        if(barcode.length()!=12){
-            newProduct.setStatusCode(400);
+        if(barcode.length()!=12){ // This url can only handle UPC barcodes
+            newProduct.setStatusCode(406); // Malformed barcode = 406
             ErrorWriter.logError("[ERROR] Malformed barcode: " + barcode + "\n" + lookup_url + " expects a UPC barcode");
             return newProduct;
         }
         try {
-            connection = (HttpURLConnection) new URL(lookup_url+barcode).openConnection();
-            connection.setInstanceFollowRedirects(false);
-            connection.connect();
+            connection = (HttpURLConnection) new URL(lookup_url+barcode).openConnection(); // Open connection
+            connection.setInstanceFollowRedirects(false); // Don't redirect (may not be necessary in this case)
+            connection.connect(); // Connect
             connection.getInputStream();
             input = new BufferedReader(new InputStreamReader(connection.getInputStream()));
             String inputLine;
             String htmlPageStr = "";
-            while ((inputLine = input.readLine()) != null)
+            while ((inputLine = input.readLine()) != null) // Turn webpage into string object
                 htmlPageStr += inputLine + "\n";
             try {
-                JSONObject obj = new JSONObject(htmlPageStr);
-                String itemString = obj.get("items").toString();
-                JSONObject items = new JSONObject(itemString.substring(1, itemString.length() - 1));
-                String name = items.getString("title");
+                JSONObject obj = new JSONObject(htmlPageStr); // Turn string into JSON object
+                String itemString = obj.get("items").toString(); // Get item subcategory from JSON
+                JSONObject items = new JSONObject(itemString.substring(1, itemString.length() - 1)); // Clean and turn into JSON obj
+                String name = items.getString("title"); // Self explanatory
                 String category = items.getString("category");
                 String ean = items.getString("ean");
                 String upc = items.getString("upc");
@@ -104,33 +104,34 @@ public class Scraper {
                 String[] imageUrl = images.split(",");
                 String[] codes = {ean, upc};
                 String pictureURL = "";
-                if (imageUrl.length > 0)
-                    pictureURL = imageUrl[0];
+                if (imageUrl.length > 0) // Make sure there is at least one picture (can be multiple)
+                    pictureURL = imageUrl[0].substring(1);
+                saveImage(pictureURL, imageDirectory, name);
                 newProduct.setName(name);
                 newProduct.setCodes(codes);
                 newProduct.setCategory(category);
                 newProduct.setManufacturer(manufacturer);
                 newProduct.setPictureURL(pictureURL); // todo verify the picture is a valid asynchronously
-                newProduct.setStatusCode(200); // status 405
-            }catch(Exception e){
+                newProduct.setStatusCode(200); // Everything was successful
+            }catch(Exception e){ // JSON exception (webpage returned anything other than JSON)
                 newProduct.setStatusCode(405);
                 ErrorWriter.logError("[ERROR]: " + lookup_url + "; JSON object expected:\n" + e.getMessage());
             }
-        }catch (Exception e)
+        }catch (Exception e) // HTTP exception
         {
             int repCode;
-            try{
+            try{ // Attempt to get response code. If unreachable assumed to be 400
                 repCode = connection.getResponseCode();
             }catch (Exception ee) {
                 repCode = 400;
             }
-            if (repCode != HttpURLConnection.HTTP_OK) {
+            if (repCode != HttpURLConnection.HTTP_OK) { // Probably redundant, had to be an exception thrown to be here in the first place
                 String errorMsg = "Error in queryUPCItemDB\n";
                 newProduct.setStatusCode(400);
-                if (repCode == 404) {
+                if (repCode == 404) { // Item not found response code
                     errorMsg += "\tItem not found\n";
                     newProduct.setStatusCode(505);
-                } else if (repCode == 429) {
+                } else if (repCode == 429) { // Too many requests response code
                     errorMsg += "\tRequest limit reached for UPCItemDB\n";
                     newProduct.setStatusCode(505);
                 }
@@ -162,6 +163,36 @@ public class Scraper {
             return false;
         }
         return true;
+    }
+
+    public int saveImage(String imageUrl, String destinationFolder, String itemName){
+        if(imageUrl.equals(""))
+            return 2;
+        String imgName = itemName;
+        if(itemName.length()>8)
+            imgName = itemName.substring(0,7);
+        try {
+            String[] baseImage = imageUrl.split("\\?");
+            if(baseImage.length>0)
+                imageUrl = baseImage[0];
+            String path=destinationFolder + imgName + ".jpg";
+            path = path.replace(" ", "_");
+            URL url = new URL(imageUrl);
+            InputStream is = url.openStream();
+            OutputStream os = new FileOutputStream(path);
+
+            byte[] b = new byte[2048];
+            int length;
+
+            while ((length = is.read(b)) != -1)
+                os.write(b, 0, length);
+            is.close();
+            os.close();
+            return 0;
+        }catch (IOException e){
+            ErrorWriter.logError("Error saving image:\n\t" + e.getMessage());
+        }
+        return 1;
     }
 
 }
