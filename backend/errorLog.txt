@@ -1,0 +1,18 @@
+[2/28/2020 | 23:47.54483]
+[ERROR] Malformed barcode: 075800000010
+
+[2/28/2020 | 23:47.54636]
+Error in queryUPCItemDB: Server returned HTTP response code: 400 for URL: https://api.upcitemdb.com/prod/trial/lookup?upc=075800000010
+
+[2/28/2020 | 23:47.55728]
+Server returned HTTP response code: 400 for URL: https://api.upcitemdb.com/prod/trial/lookup?upc=075800000010
+
+[2/28/2020 | 23:50.35230]
+[ERROR] Malformed barcode: 075800000010
+
+[2/28/2020 | 23:50.35379]
+Error in queryUPCItemDB: Server returned HTTP response code: 400 for URL: https://api.upcitemdb.com/prod/trial/lookup?upc=075800000010
+
+[2/28/2020 | 23:50.36475]
+Server returned HTTP response code: 400 for URL: https://api.upcitemdb.com/prod/trial/lookup?upc=075800000010
+
