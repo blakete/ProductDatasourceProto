@@ -5,6 +5,7 @@ import com.google.gson.GsonBuilder;
 import org.json.JSONObject;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
+import woven.ReferenceProduct;
 
 import java.io.*;
 import java.net.HttpURLConnection;
@@ -16,11 +17,14 @@ public class Scraper {
     public static final String imageDirectory = "Images/";
     private Gson gson = new GsonBuilder().disableHtmlEscaping().create();
 
-    public Product queryProductInfo(String barcode) {
-        Product newProduct = this.queryBCLookup(barcode);
+    public ReferenceProduct queryProductInfo(String barcode) {
+        ReferenceProduct newProduct = this.queryBCLookup(barcode);
         if(newProduct.getStatusCode()!=200){
-            System.out.println("Datasource: UPCItemDB");
             newProduct = this.queryUPCItemDB(barcode);
+            if (newProduct.getStatusCode() == 200)
+                System.out.println("Datasource: UPCItemDB");
+            else
+                System.out.println("Datasource: UPCItemDB & BCLookup");
             return newProduct;
         }
         System.out.println("Datasource: BCLookup");
@@ -28,9 +32,9 @@ public class Scraper {
         return newProduct;
     }
 
-    private Product queryBCLookup(String barcode) {
+    private ReferenceProduct queryBCLookup(String barcode) {
         // Here we create a document object and use JSoup to fetch the website
-        Product newProduct = new Product();
+        ReferenceProduct newProduct = new ReferenceProduct();
         try {
             String lookup_url = "https://www.barcodelookup.com/";
             Document doc = Jsoup.connect(lookup_url+barcode).get();
@@ -75,11 +79,11 @@ public class Scraper {
         }
         return newProduct;
     }
-    private Product queryUPCItemDB(String barcode) {
+    private ReferenceProduct queryUPCItemDB(String barcode) {
         String lookup_url = "https://api.upcitemdb.com/prod/trial/lookup?upc=";
         BufferedReader input = null;
         HttpURLConnection connection = null;
-        Product newProduct = new Product();
+        ReferenceProduct newProduct = new ReferenceProduct();
 //        if(barcode.length()!=12){ // This url can only handle UPC barcodes // todo fix errors here when requesting truncated barcode
 //            newProduct.setStatusCode(406); // Malformed barcode = 406
 //            ErrorWriter.logError("[ERROR] Malformed barcode: " + barcode + "\n" + lookup_url + " expects a UPC barcode");
@@ -119,7 +123,6 @@ public class Scraper {
                     }
 //                    saveImage(pictureURL, imageDirectory, name); // todo fix errors here when saving image
                 }
-
                 newProduct.setName(name);
                 newProduct.setCodes(codes);
                 newProduct.setCategory(category);
@@ -170,8 +173,8 @@ public class Scraper {
         String malformedBarcode = doc.select("div.container > div.row > div.col-md-offset-2 > center > h1").text();
         if (malformedBarcode != null && malformedBarcode.contains("is not a valid barcode number")) {
             return false;
-        } else if (notExist != null && notExist.contains("Product Doesn't Exist")) {
-            ErrorWriter.logError("[ERROR] Product does not exist in this database");
+        } else if (notExist != null && notExist.contains("ReferenceProduct Doesn't Exist")) {
+            ErrorWriter.logError("[ERROR] ReferenceProduct does not exist in this database");
             return false;
         }
         return true;

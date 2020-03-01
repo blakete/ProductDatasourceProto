@@ -2,6 +2,7 @@ package com.shopiq.backend;
 import com.mongodb.util.JSON;
 import org.json.JSONArray;
 import org.json.JSONObject;
+import woven.ReferenceProduct;
 
 import java.io.IOException;
 import java.net.*;
@@ -69,7 +70,7 @@ public class Main {
         for(int i=1; i<10; i++){
             String bCode = barCodes[i];
             System.out.println("Querying: " + bCode);
-            Product newProduct = scraper.queryProductInfo(bCode);
+            ReferenceProduct newProduct = scraper.queryProductInfo(bCode);
             if(newProduct.getStatusCode()==200) {
                 System.out.println(newProduct.toString());
                 System.out.println();

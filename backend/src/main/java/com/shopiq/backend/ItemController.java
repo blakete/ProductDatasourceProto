@@ -10,6 +10,7 @@ import com.mongodb.util.JSON;
 import org.apache.tomcat.util.json.JSONParser;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+import woven.ReferenceProduct;
 
 import java.util.List;
 import java.util.Optional;
@@ -38,7 +39,7 @@ public class ItemController {
             return gson.toJson(product);
         } else {
             try {
-                Product queryResp = scraper.queryProductInfo(barcode);
+                ReferenceProduct queryResp = scraper.queryProductInfo(barcode);
                 if (queryResp.getStatusCode() != 200) { // scrape unsuccessful
                     System.out.println("[INFO] Scrape unsuccessful");
                     Product newProduct = new Product();
@@ -57,7 +58,7 @@ public class ItemController {
                 }
             } catch (Exception e) {
                 e.printStackTrace(); // todo write errors to log file
-                Product newProduct = new Product();
+                ReferenceProduct newProduct = new ReferenceProduct();
                 newProduct.setStatusCode(500); // internal server error code
                 return gsonC.toJson(newProduct);
             }
