@@ -19,10 +19,15 @@ public class Scraper {
     public Product queryProductInfo(String barcode) {
         Product newProduct = this.queryBCLookup(barcode);
         if(newProduct.getStatusCode()!=200){
+            System.out.println("Datasource: UPCItemDB");
             newProduct = this.queryUPCItemDB(barcode);
+            return newProduct;
         }
+        System.out.println("Datasource: BCLookup");
+//        System.out.println(newProduct.toString());
         return newProduct;
     }
+
     private Product queryBCLookup(String barcode) {
         // Here we create a document object and use JSoup to fetch the website
         Product newProduct = new Product();
@@ -75,11 +80,11 @@ public class Scraper {
         BufferedReader input = null;
         HttpURLConnection connection = null;
         Product newProduct = new Product();
-        if(barcode.length()!=12){ // This url can only handle UPC barcodes
-            newProduct.setStatusCode(406); // Malformed barcode = 406
-            ErrorWriter.logError("[ERROR] Malformed barcode: " + barcode + "\n" + lookup_url + " expects a UPC barcode");
-            return newProduct;
-        }
+//        if(barcode.length()!=12){ // This url can only handle UPC barcodes // todo fix errors here when requesting truncated barcode
+//            newProduct.setStatusCode(406); // Malformed barcode = 406
+//            ErrorWriter.logError("[ERROR] Malformed barcode: " + barcode + "\n" + lookup_url + " expects a UPC barcode");
+//            return newProduct;
+//        }
         try {
             connection = (HttpURLConnection) new URL(lookup_url+barcode).openConnection(); // Open connection
             connection.setInstanceFollowRedirects(false); // Don't redirect (may not be necessary in this case)
@@ -103,19 +108,26 @@ public class Scraper {
                 images = images.substring(1, images.length() - 1);
                 String[] imageUrl = images.split(",");
                 String[] codes = {ean, upc};
-                String pictureURL = "";
-                if (imageUrl.length > 0) // Make sure there is at least one picture (can be multiple)
-                    pictureURL = imageUrl[0].substring(1);
-                saveImage(pictureURL, imageDirectory, name);
+                String pictureURL = ""; //
+                if (imageUrl.length > 0)
+                {
+                    // Make sure there is at least one picture (can be multiple)
+                    if (imageUrl[0].length() > 2) // stupid check to make sure url is not null
+                    {
+                        pictureURL = imageUrl[0].substring(1);
+                        newProduct.setPictureURL(pictureURL); // todo verify the picture is a valid asynchronously
+                    }
+//                    saveImage(pictureURL, imageDirectory, name); // todo fix errors here when saving image
+                }
+
                 newProduct.setName(name);
                 newProduct.setCodes(codes);
                 newProduct.setCategory(category);
                 newProduct.setManufacturer(manufacturer);
-                newProduct.setPictureURL(pictureURL); // todo verify the picture is a valid asynchronously
                 newProduct.setStatusCode(200); // Everything was successful
             }catch(Exception e){ // JSON exception (webpage returned anything other than JSON)
                 newProduct.setStatusCode(405);
-                ErrorWriter.logError("[ERROR]: " + lookup_url + "; JSON object expected:\n" + e.getMessage());
+                ErrorWriter.logError("[ERROR]: " + lookup_url + ", JSON object expected:\n" + e.getMessage());
             }
         }catch (Exception e) // HTTP exception
         {

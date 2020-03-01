@@ -56,18 +56,16 @@ public class JMDBConnector {
     public boolean insertJsonDocument(String json) {
         DBObject dbObject = (DBObject) JSON.parse(json);
         collection.insert(dbObject);
-        collection.insert(dbObject);
         return true;
     }
 
     public String getProduct(String barcode) {
         DBObject query = BasicDBObjectBuilder.start().add("upc", barcode).get();
         DBCursor cursor = collection.find(query);
-        String productDocument = null;
-        while(cursor.hasNext()){
-            productDocument = cursor.next().toString();
-            System.out.println(productDocument);
-        }
+        String productDocument = cursor.next().toString();
+//        while(cursor.hasNext()) {
+//            productDocument = cursor.next().toString();
+//        }
         return productDocument;
     }
 

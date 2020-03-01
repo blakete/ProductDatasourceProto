@@ -28,39 +28,37 @@ public class ItemController {
     private Scraper scraper = new Scraper();
     private JMDBConnector conn = new JMDBConnector();
 
-    @GetMapping("/item")
-    public String getItem(@RequestParam(value = "barcode") String barcode) {
-        // todo make this request asynchronous
-        // todo add the product product to the database when the scan has been kicked off
-
-        // todo check if barcode already exists in the database
-        if (conn.productExists(barcode)) {
+    @GetMapping("/item/{barcode}")
+    public String getItem(@PathVariable String barcode) {
+        // todo make scrape asynchronous
+        System.out.println("\nitem query: " + barcode);
+        if (conn.productExists(barcode)) { // product already in database
+            System.out.println("Datasource: mongodb");
             String product = conn.getProduct(barcode);
-            System.out.println("product already added!");
-            return gsonC.toJson(product);
+            return gson.toJson(product);
         } else {
             try {
                 Product queryResp = scraper.queryProductInfo(barcode);
-                if (queryResp.getStatusCode() != 200) {
-                    Product newProduct = new Product();
-                    newProduct.setStatusCode(505);
-                    // todo emit this product code
-                } else { // todo the scrape worked
-                    // insert item into to database for future reference
-                    conn.insertJsonDocument(gson.toJson(queryResp));
-                }
-                // todo use unfinished timer to identify slower scrape sessions
-                if (conn.productExists(barcode)) { // scrape was successful
-                    return conn.getProduct(barcode);
-                } else { // error when scraping information
+                if (queryResp.getStatusCode() != 200) { // scrape unsuccessful
+                    System.out.println("[INFO] Scrape unsuccessful");
                     Product newProduct = new Product();
                     newProduct.setStatusCode(505);
                     return gsonC.toJson(newProduct);
                 }
+                // scrape successful
+                // return the product if in database
+                if (queryResp.getUpc() != null && queryResp.getUpc() != "" && conn.productExists(queryResp.getUpc())) {
+                    System.out.println("fixed query: " + queryResp.getUpc());
+                    System.out.println("[INFO] Scrape fixed barcode");
+                    return conn.getProduct(queryResp.getUpc());
+                } else { // item not inserted into DB, add it, return scraped result
+                    conn.insertJsonDocument(gson.toJson(queryResp));
+                    return gson.toJson(queryResp);
+                }
             } catch (Exception e) {
-                e.printStackTrace(); // todo record error log and the code that caused the errorm
+                e.printStackTrace(); // todo write errors to log file
                 Product newProduct = new Product();
-                newProduct.setStatusCode(505);
+                newProduct.setStatusCode(500); // internal server error code
                 return gsonC.toJson(newProduct);
             }
         }

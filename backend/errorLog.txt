@@ -1,141 +1,639 @@
-[2/29/2020 | 14:40.25395]
-Error in queryUPCItemDB
-	Request limit reached for UPCItemDB
-	HTTP Response code: 429
-	URL: https://api.upcitemdb.com/prod/trial/lookup?upc=871760000452
+[2/29/2020 | 18:1.1051]
+Error saving image:
+	Server returned HTTP response code: 403 for URL: https://images.barcodelookup.com/1633/16330261-1.jpg
 
-[2/29/2020 | 14:40.26412]
-Error in queryUPCItemDB
-	Request limit reached for UPCItemDB
-	HTTP Response code: 429
-	URL: https://api.upcitemdb.com/prod/trial/lookup?upc=008100007882
+[2/29/2020 | 18:1.14336]
+[ERROR] Malformed barcode: 8100007882
 
-[2/29/2020 | 14:40.27422]
-Error in queryUPCItemDB
-	Request limit reached for UPCItemDB
-	HTTP Response code: 429
-	URL: https://api.upcitemdb.com/prod/trial/lookup?upc=300054757708
+[2/29/2020 | 18:1.18800]
+Error saving image:
+	Server returned HTTP response code: 403 for URL: https://images.barcodelookup.com/5558/55586966-1.jpg
 
-[2/29/2020 | 14:40.28413]
-Error in queryUPCItemDB
-	Request limit reached for UPCItemDB
-	HTTP Response code: 429
-	URL: https://api.upcitemdb.com/prod/trial/lookup?upc=070462433838
+[2/29/2020 | 18:1.2165]
+[ERROR] Malformed barcode: 2490877483
 
-[2/29/2020 | 14:40.2955]
+[2/29/2020 | 18:1.21121]
+[ERROR]: https://api.upcitemdb.com/prod/trial/lookup?upc=, JSON object expected:
+End of input at character 0 of 
+
+[2/29/2020 | 18:1.23469]
+Error saving image:
+	Server returned HTTP response code: 403 for URL: https://images.barcodelookup.com/2973/29735578-1.jpg
+
+[2/29/2020 | 18:1.25904]
+Error saving image:
+	Server returned HTTP response code: 403 for URL: https://images.barcodelookup.com/1784/17843822-1.jpg
+
+[2/29/2020 | 18:1.28468]
 null
 
-[2/29/2020 | 14:40.29405]
+[2/29/2020 | 18:1.28525]
 Error in queryUPCItemDB
-	Request limit reached for UPCItemDB
-	HTTP Response code: 429
-	URL: https://api.upcitemdb.com/prod/trial/lookup?upc=002490877483
+	HTTP Response code: 400
+	URL: https://api.upcitemdb.com/prod/trial/lookup?upc=4490489269
 
-[2/29/2020 | 14:40.29601]
-HTTP error fetching URL
+[2/29/2020 | 18:1.31250]
+Error saving image:
+	Server returned HTTP response code: 403 for URL: https://images.barcodelookup.com/2754/27544185-1.jpg
 
-[2/29/2020 | 14:40.30615]
+[2/29/2020 | 18:1.35892]
+Error saving image:
+	Server returned HTTP response code: 403 for URL: https://images.barcodelookup.com/15749/157496203-1.jpg
+
+[2/29/2020 | 18:1.38287]
+Error saving image:
+	Server returned HTTP response code: 403 for URL: https://images.barcodelookup.com/2974/29742802-1.jpg
+
+[2/29/2020 | 18:1.40761]
+Error saving image:
+	Server returned HTTP response code: 403 for URL: https://images.barcodelookup.com/2973/29735174-1.jpg
+
+[2/29/2020 | 18:1.4393]
+Error saving image:
+	Server returned HTTP response code: 403 for URL: https://images.barcodelookup.com/13657/136573530-1.jpg
+
+[2/29/2020 | 18:1.45467]
+[ERROR] Malformed barcode: 4990286525
+
+[2/29/2020 | 18:1.45523]
 Error in queryUPCItemDB
-	Request limit reached for UPCItemDB
-	HTTP Response code: 429
-	URL: https://api.upcitemdb.com/prod/trial/lookup?upc=015000140007
+	HTTP Response code: 400
+	URL: https://api.upcitemdb.com/prod/trial/lookup?upc=4990286525
 
-[2/29/2020 | 14:40.30800]
-HTTP error fetching URL
+[2/29/2020 | 18:1.47843]
+Error saving image:
+	Server returned HTTP response code: 403 for URL: https://images.barcodelookup.com/2974/29747577-1.jpg
 
-[2/29/2020 | 14:40.31413]
-Error in queryUPCItemDB
-	Request limit reached for UPCItemDB
-	HTTP Response code: 429
-	URL: https://api.upcitemdb.com/prod/trial/lookup?upc=076314302994
-
-[2/29/2020 | 14:40.31605]
-HTTP error fetching URL
-
-[2/29/2020 | 14:42.3844]
+[2/29/2020 | 18:1.56526]
 null
 
-[2/29/2020 | 14:42.4182]
-Error in queryUPCItemDB
-	Request limit reached for UPCItemDB
-	HTTP Response code: 429
-	URL: https://api.upcitemdb.com/prod/trial/lookup?upc=002490877483
+[2/29/2020 | 18:1.56590]
+[ERROR]: https://api.upcitemdb.com/prod/trial/lookup?upc=, JSON object expected:
+End of input at character 0 of 
 
-[2/29/2020 | 14:42.5606]
-HTTP error fetching URL
+[2/29/2020 | 18:1.59271]
+Error saving image:
+	Server returned HTTP response code: 403 for URL: https://images.barcodelookup.com/2333/23337455-1.jpg
 
-[2/29/2020 | 14:42.5779]
-Error in queryUPCItemDB
-	Request limit reached for UPCItemDB
-	HTTP Response code: 429
-	URL: https://api.upcitemdb.com/prod/trial/lookup?upc=076314302994
+[2/29/2020 | 18:2.1901]
+Error saving image:
+	Server returned HTTP response code: 403 for URL: https://images.barcodelookup.com/4448/44484618-1.jpg
 
-[2/29/2020 | 14:42.5973]
-HTTP error fetching URL
+[2/29/2020 | 18:2.4276]
+Error saving image:
+	Server returned HTTP response code: 403 for URL: https://images.barcodelookup.com/13658/136582607-1.jpg
 
-[2/29/2020 | 14:44.14862]
+[2/29/2020 | 18:2.6887]
+Error saving image:
+	Server returned HTTP response code: 403 for URL: https://images.barcodelookup.com/3097/30976555-1.jpg
+
+[2/29/2020 | 18:2.9356]
+Error saving image:
+	Server returned HTTP response code: 403 for URL: https://images.barcodelookup.com/3097/30979442-1.jpg
+
+[2/29/2020 | 18:2.11849]
+Error saving image:
+	Server returned HTTP response code: 403 for URL: https://images.barcodelookup.com/3097/30976539-1.jpg
+
+[2/29/2020 | 18:2.14425]
+Error saving image:
+	Server returned HTTP response code: 403 for URL: https://images.barcodelookup.com/3097/30975704-1.jpg
+
+[2/29/2020 | 18:2.17119]
+Error saving image:
+	Server returned HTTP response code: 403 for URL: https://images.barcodelookup.com/322/3224730-1.jpg
+
+[2/29/2020 | 18:2.19516]
+Error saving image:
+	Server returned HTTP response code: 403 for URL: https://images.barcodelookup.com/324/3241253-1.jpg
+
+[2/29/2020 | 18:2.25882]
+Error saving image:
+	Server returned HTTP response code: 403 for URL: https://images.barcodelookup.com/9817/98171036-1.jpg
+
+[2/29/2020 | 18:2.28473]
 null
 
-[2/29/2020 | 14:44.15249]
-Error in queryUPCItemDB
-	Request limit reached for UPCItemDB
-	HTTP Response code: 429
-	URL: https://api.upcitemdb.com/prod/trial/lookup?upc=002490877483
+[2/29/2020 | 18:2.28536]
+[ERROR]: https://api.upcitemdb.com/prod/trial/lookup?upc=, JSON object expected:
+String index out of range: -1
 
-[2/29/2020 | 14:44.15446]
+[2/29/2020 | 18:2.3348]
+Error saving image:
+	Server returned HTTP response code: 403 for URL: https://images.barcodelookup.com/5684/56847067-1.jpg
+
+[2/29/2020 | 18:2.35311]
+[ERROR] Malformed barcode: 9542031695
+
+[2/29/2020 | 18:2.37745]
+Error saving image:
+	Server returned HTTP response code: 403 for URL: https://images.barcodelookup.com/2664/26643159-1.jpg
+
+[2/29/2020 | 18:2.4049]
+Error saving image:
+	Server returned HTTP response code: 403 for URL: https://images.barcodelookup.com/2333/23334743-1.jpg
+
+[2/29/2020 | 18:2.42375]
+Error saving image:
+	Server returned HTTP response code: 403 for URL: https://images.barcodelookup.com/1703/17035806-1.jpg
+
+[2/29/2020 | 18:4.145]
+null
+
+[2/29/2020 | 18:4.1158]
+[ERROR]: https://api.upcitemdb.com/prod/trial/lookup?upc=, JSON object expected:
+String index out of range: -1
+
+[2/29/2020 | 18:7.23708]
+null
+
+[2/29/2020 | 18:7.26648]
+[ERROR]: https://api.upcitemdb.com/prod/trial/lookup?upc=, JSON object expected:
+String index out of range: -1
+
+[2/29/2020 | 18:8.45730]
+null
+
+[2/29/2020 | 18:10.8541]
+[ERROR]: https://api.upcitemdb.com/prod/trial/lookup?upc=, JSON object expected:
+String index out of range: -1
+
+[2/29/2020 | 18:10.11334]
+null
+
+[2/29/2020 | 18:10.57725]
+[ERROR]: https://api.upcitemdb.com/prod/trial/lookup?upc=, JSON object expected:
+String index out of range: -1
+
+[2/29/2020 | 18:12.39518]
+null
+
+[2/29/2020 | 18:15.32943]
+null
+
+[2/29/2020 | 18:16.6775]
+null
+
+[2/29/2020 | 18:17.6177]
+null
+
+[2/29/2020 | 18:18.5895]
+Error saving image:
+	Server returned HTTP response code: 403 for URL: https://images.barcodelookup.com/1633/16330261-1.jpg
+
+[2/29/2020 | 18:19.2573]
+[ERROR] Malformed barcode: 8100007882
+
+[2/29/2020 | 18:19.7377]
+Error saving image:
+	Server returned HTTP response code: 403 for URL: https://images.barcodelookup.com/5558/55586966-1.jpg
+
+[2/29/2020 | 18:19.9681]
+[ERROR] Malformed barcode: 2490877483
+
+[2/29/2020 | 18:19.9757]
+[ERROR]: https://api.upcitemdb.com/prod/trial/lookup?upc=, JSON object expected:
+End of input at character 0 of 
+
+[2/29/2020 | 18:19.12135]
+Error saving image:
+	Server returned HTTP response code: 403 for URL: https://images.barcodelookup.com/2973/29735578-1.jpg
+
+[2/29/2020 | 18:19.14758]
+Error saving image:
+	Server returned HTTP response code: 403 for URL: https://images.barcodelookup.com/1784/17843822-1.jpg
+
+[2/29/2020 | 18:19.17330]
+null
+
+[2/29/2020 | 18:19.17386]
+Error in queryUPCItemDB
+	HTTP Response code: 400
+	URL: https://api.upcitemdb.com/prod/trial/lookup?upc=4490489269
+
+[2/29/2020 | 18:19.19780]
+Error saving image:
+	Server returned HTTP response code: 403 for URL: https://images.barcodelookup.com/2754/27544185-1.jpg
+
+[2/29/2020 | 18:19.24168]
+Error saving image:
+	Server returned HTTP response code: 403 for URL: https://images.barcodelookup.com/15749/157496203-1.jpg
+
+[2/29/2020 | 18:19.26601]
+Error saving image:
+	Server returned HTTP response code: 403 for URL: https://images.barcodelookup.com/2974/29742802-1.jpg
+
+[2/29/2020 | 18:19.28964]
+Error saving image:
+	Server returned HTTP response code: 403 for URL: https://images.barcodelookup.com/2973/29735174-1.jpg
+
+[2/29/2020 | 18:19.31335]
+Error saving image:
+	Server returned HTTP response code: 403 for URL: https://images.barcodelookup.com/13657/136573530-1.jpg
+
+[2/29/2020 | 18:19.33543]
+[ERROR] Malformed barcode: 4990286525
+
+[2/29/2020 | 18:19.33604]
+Error in queryUPCItemDB
+	HTTP Response code: 400
+	URL: https://api.upcitemdb.com/prod/trial/lookup?upc=4990286525
+
+[2/29/2020 | 18:19.35959]
+Error saving image:
+	Server returned HTTP response code: 403 for URL: https://images.barcodelookup.com/2974/29747577-1.jpg
+
+[2/29/2020 | 18:19.44566]
+null
+
+[2/29/2020 | 18:19.44624]
+[ERROR]: https://api.upcitemdb.com/prod/trial/lookup?upc=, JSON object expected:
+End of input at character 0 of 
+
+[2/29/2020 | 18:19.46969]
+Error saving image:
+	Server returned HTTP response code: 403 for URL: https://images.barcodelookup.com/2333/23337455-1.jpg
+
+[2/29/2020 | 18:19.49370]
+Error saving image:
+	Server returned HTTP response code: 403 for URL: https://images.barcodelookup.com/4448/44484618-1.jpg
+
+[2/29/2020 | 18:19.52203]
+Error saving image:
+	Server returned HTTP response code: 403 for URL: https://images.barcodelookup.com/13658/136582607-1.jpg
+
+[2/29/2020 | 18:19.54863]
+Error saving image:
+	Server returned HTTP response code: 403 for URL: https://images.barcodelookup.com/3097/30976555-1.jpg
+
+[2/29/2020 | 18:19.57321]
+Error saving image:
+	Server returned HTTP response code: 403 for URL: https://images.barcodelookup.com/3097/30979442-1.jpg
+
+[2/29/2020 | 18:19.59978]
+Error saving image:
+	Server returned HTTP response code: 403 for URL: https://images.barcodelookup.com/3097/30976539-1.jpg
+
+[2/29/2020 | 18:20.2302]
+Error saving image:
+	Server returned HTTP response code: 403 for URL: https://images.barcodelookup.com/3097/30975704-1.jpg
+
+[2/29/2020 | 18:20.4961]
+Error saving image:
+	Server returned HTTP response code: 403 for URL: https://images.barcodelookup.com/322/3224730-1.jpg
+
+[2/29/2020 | 18:20.7568]
+Error saving image:
+	Server returned HTTP response code: 403 for URL: https://images.barcodelookup.com/324/3241253-1.jpg
+
+[2/29/2020 | 18:20.13957]
+Error saving image:
+	Server returned HTTP response code: 403 for URL: https://images.barcodelookup.com/9817/98171036-1.jpg
+
+[2/29/2020 | 18:20.16516]
+null
+
+[2/29/2020 | 18:20.2189]
+Error saving image:
+	Server returned HTTP response code: 403 for URL: https://images.barcodelookup.com/5684/56847067-1.jpg
+
+[2/29/2020 | 18:20.23491]
+[ERROR] Malformed barcode: 9542031695
+
+[2/29/2020 | 18:20.25934]
+Error saving image:
+	Server returned HTTP response code: 403 for URL: https://images.barcodelookup.com/2664/26643159-1.jpg
+
+[2/29/2020 | 18:20.28305]
+Error saving image:
+	Server returned HTTP response code: 403 for URL: https://images.barcodelookup.com/2333/23334743-1.jpg
+
+[2/29/2020 | 18:20.30655]
+Error saving image:
+	Server returned HTTP response code: 403 for URL: https://images.barcodelookup.com/1703/17035806-1.jpg
+
+[2/29/2020 | 18:21.497]
+null
+
+[2/29/2020 | 18:21.49114]
+[ERROR]: https://api.upcitemdb.com/prod/trial/lookup?upc=, JSON object expected:
+End of input at character 0 of 
+
+[2/29/2020 | 18:23.2328]
+Error saving image:
+	Server returned HTTP response code: 403 for URL: https://images.barcodelookup.com/1633/16330261-1.jpg
+
+[2/29/2020 | 18:23.6673]
+[ERROR] Malformed barcode: 8100007882
+
+[2/29/2020 | 18:23.11138]
+Error saving image:
+	Server returned HTTP response code: 403 for URL: https://images.barcodelookup.com/5558/55586966-1.jpg
+
+[2/29/2020 | 18:23.13378]
+[ERROR] Malformed barcode: 2490877483
+
+[2/29/2020 | 18:23.13436]
+[ERROR]: https://api.upcitemdb.com/prod/trial/lookup?upc=, JSON object expected:
+End of input at character 0 of 
+
+[2/29/2020 | 18:23.15795]
+Error saving image:
+	Server returned HTTP response code: 403 for URL: https://images.barcodelookup.com/2973/29735578-1.jpg
+
+[2/29/2020 | 18:23.18180]
+Error saving image:
+	Server returned HTTP response code: 403 for URL: https://images.barcodelookup.com/1784/17843822-1.jpg
+
+[2/29/2020 | 18:23.20634]
+null
+
+[2/29/2020 | 18:23.20690]
+Error in queryUPCItemDB
+	HTTP Response code: 400
+	URL: https://api.upcitemdb.com/prod/trial/lookup?upc=4490489269
+
+[2/29/2020 | 18:23.23228]
+Error saving image:
+	Server returned HTTP response code: 403 for URL: https://images.barcodelookup.com/2754/27544185-1.jpg
+
+[2/29/2020 | 18:23.28195]
+Error saving image:
+	Server returned HTTP response code: 403 for URL: https://images.barcodelookup.com/15749/157496203-1.jpg
+
+[2/29/2020 | 18:23.30525]
+Error saving image:
+	Server returned HTTP response code: 403 for URL: https://images.barcodelookup.com/2974/29742802-1.jpg
+
+[2/29/2020 | 18:23.33140]
+Error saving image:
+	Server returned HTTP response code: 403 for URL: https://images.barcodelookup.com/2973/29735174-1.jpg
+
+[2/29/2020 | 18:23.35525]
+Error saving image:
+	Server returned HTTP response code: 403 for URL: https://images.barcodelookup.com/13657/136573530-1.jpg
+
+[2/29/2020 | 18:23.37797]
+[ERROR] Malformed barcode: 4990286525
+
+[2/29/2020 | 18:23.37853]
+Error in queryUPCItemDB
+	HTTP Response code: 400
+	URL: https://api.upcitemdb.com/prod/trial/lookup?upc=4990286525
+
+[2/29/2020 | 18:23.40422]
+Error saving image:
+	Server returned HTTP response code: 403 for URL: https://images.barcodelookup.com/2974/29747577-1.jpg
+
+[2/29/2020 | 18:23.49100]
+null
+
+[2/29/2020 | 18:23.49160]
+[ERROR]: https://api.upcitemdb.com/prod/trial/lookup?upc=, JSON object expected:
+End of input at character 0 of 
+
+[2/29/2020 | 18:23.5263]
+Error saving image:
+	Server returned HTTP response code: 403 for URL: https://images.barcodelookup.com/2333/23337455-1.jpg
+
+[2/29/2020 | 18:23.5516]
+Error saving image:
+	Server returned HTTP response code: 403 for URL: https://images.barcodelookup.com/4448/44484618-1.jpg
+
+[2/29/2020 | 18:23.57534]
+Error saving image:
+	Server returned HTTP response code: 403 for URL: https://images.barcodelookup.com/13658/136582607-1.jpg
+
+[2/29/2020 | 18:24.0111]
+Error saving image:
+	Server returned HTTP response code: 403 for URL: https://images.barcodelookup.com/3097/30976555-1.jpg
+
+[2/29/2020 | 18:24.2552]
+Error saving image:
+	Server returned HTTP response code: 403 for URL: https://images.barcodelookup.com/3097/30979442-1.jpg
+
+[2/29/2020 | 18:24.4938]
+Error saving image:
+	Server returned HTTP response code: 403 for URL: https://images.barcodelookup.com/3097/30976539-1.jpg
+
+[2/29/2020 | 18:24.7590]
+Error saving image:
+	Server returned HTTP response code: 403 for URL: https://images.barcodelookup.com/3097/30975704-1.jpg
+
+[2/29/2020 | 18:24.9904]
+Error saving image:
+	Server returned HTTP response code: 403 for URL: https://images.barcodelookup.com/322/3224730-1.jpg
+
+[2/29/2020 | 18:24.12224]
+Error saving image:
+	Server returned HTTP response code: 403 for URL: https://images.barcodelookup.com/324/3241253-1.jpg
+
+[2/29/2020 | 18:24.18646]
+Error saving image:
+	Server returned HTTP response code: 403 for URL: https://images.barcodelookup.com/9817/98171036-1.jpg
+
+[2/29/2020 | 18:24.21261]
+null
+
+[2/29/2020 | 18:24.25663]
+Error saving image:
+	Server returned HTTP response code: 403 for URL: https://images.barcodelookup.com/5684/56847067-1.jpg
+
+[2/29/2020 | 18:24.27878]
+[ERROR] Malformed barcode: 9542031695
+
+[2/29/2020 | 18:24.30601]
+Error saving image:
+	Server returned HTTP response code: 403 for URL: https://images.barcodelookup.com/2664/26643159-1.jpg
+
+[2/29/2020 | 18:24.33198]
+Error saving image:
+	Server returned HTTP response code: 403 for URL: https://images.barcodelookup.com/2333/23334743-1.jpg
+
+[2/29/2020 | 18:24.35570]
+Error saving image:
+	Server returned HTTP response code: 403 for URL: https://images.barcodelookup.com/1703/17035806-1.jpg
+
+[2/29/2020 | 18:54.3167]
+Error saving image:
+	Server returned HTTP response code: 403 for URL: https://images.barcodelookup.com/1633/16330261-1.jpg
+
+[2/29/2020 | 18:54.7500]
+[ERROR] Malformed barcode: 8100007882
+
+[2/29/2020 | 18:54.12165]
+Error saving image:
+	Server returned HTTP response code: 403 for URL: https://images.barcodelookup.com/5558/55586966-1.jpg
+
+[2/29/2020 | 18:54.14705]
+[ERROR] Malformed barcode: 2490877483
+
+[2/29/2020 | 18:54.14769]
+[ERROR]: https://api.upcitemdb.com/prod/trial/lookup?upc=, JSON object expected:
+End of input at character 0 of 
+
+[2/29/2020 | 18:54.17112]
+Error saving image:
+	Server returned HTTP response code: 403 for URL: https://images.barcodelookup.com/2973/29735578-1.jpg
+
+[2/29/2020 | 18:54.3914]
+[ERROR] Malformed barcode: 8100007882
+
+[2/29/2020 | 18:56.8592]
+Error saving image:
+	Server returned HTTP response code: 403 for URL: https://images.barcodelookup.com/1633/16330261-1.jpg
+
+[2/29/2020 | 18:56.12856]
+[ERROR] Malformed barcode: 8100007882
+
+[2/29/2020 | 18:56.17566]
+Error saving image:
+	Server returned HTTP response code: 403 for URL: https://images.barcodelookup.com/5558/55586966-1.jpg
+
+[2/29/2020 | 18:57.55365]
+[ERROR] Malformed barcode: 8100007882
+
+[2/29/2020 | 19:1.8806]
+[ERROR] Malformed barcode: 8100007882
+
+[2/29/2020 | 19:2.20146]
+[ERROR] Malformed barcode: 8100007882
+
+[2/29/2020 | 19:2.55717]
+[ERROR] Malformed barcode: 8100007882
+
+[2/29/2020 | 19:10.23473]
+[ERROR] Malformed barcode: 8100007882
+
+[2/29/2020 | 19:10.41980]
+Error saving image:
+	Server returned HTTP response code: 403 for URL: https://images.barcodelookup.com/1633/16330261-1.jpg
+
+[2/29/2020 | 19:10.46254]
+[ERROR] Malformed barcode: 8100007882
+
+[2/29/2020 | 19:10.50736]
+Error saving image:
+	Server returned HTTP response code: 403 for URL: https://images.barcodelookup.com/5558/55586966-1.jpg
+
+[2/29/2020 | 19:10.52967]
+[ERROR] Malformed barcode: 2490877483
+
+[2/29/2020 | 19:10.5324]
+[ERROR]: https://api.upcitemdb.com/prod/trial/lookup?upc=, JSON object expected:
+End of input at character 0 of 
+
+[2/29/2020 | 19:10.55398]
+Error saving image:
+	Server returned HTTP response code: 403 for URL: https://images.barcodelookup.com/2973/29735578-1.jpg
+
+[2/29/2020 | 19:10.57775]
+Error saving image:
+	Server returned HTTP response code: 403 for URL: https://images.barcodelookup.com/1784/17843822-1.jpg
+
+[2/29/2020 | 19:11.0282]
+null
+
+[2/29/2020 | 19:11.0337]
+Error in queryUPCItemDB
+	HTTP Response code: 400
+	URL: https://api.upcitemdb.com/prod/trial/lookup?upc=4490489269
+
+[2/29/2020 | 19:11.2707]
+Error saving image:
+	Server returned HTTP response code: 403 for URL: https://images.barcodelookup.com/2754/27544185-1.jpg
+
+[2/29/2020 | 19:11.7156]
+Error saving image:
+	Server returned HTTP response code: 403 for URL: https://images.barcodelookup.com/15749/157496203-1.jpg
+
+[2/29/2020 | 19:11.9574]
+Error saving image:
+	Server returned HTTP response code: 403 for URL: https://images.barcodelookup.com/2974/29742802-1.jpg
+
+[2/29/2020 | 19:11.11982]
+Error saving image:
+	Server returned HTTP response code: 403 for URL: https://images.barcodelookup.com/2973/29735174-1.jpg
+
+[2/29/2020 | 19:11.14337]
+Error saving image:
+	Server returned HTTP response code: 403 for URL: https://images.barcodelookup.com/13657/136573530-1.jpg
+
+[2/29/2020 | 19:11.16666]
+[ERROR] Malformed barcode: 4990286525
+
+[2/29/2020 | 19:11.16726]
+Error in queryUPCItemDB
+	HTTP Response code: 400
+	URL: https://api.upcitemdb.com/prod/trial/lookup?upc=4990286525
+
+[2/29/2020 | 19:11.1954]
+Error saving image:
+	Server returned HTTP response code: 403 for URL: https://images.barcodelookup.com/2974/29747577-1.jpg
+
+[2/29/2020 | 19:11.27724]
+null
+
+[2/29/2020 | 19:11.27782]
+[ERROR]: https://api.upcitemdb.com/prod/trial/lookup?upc=, JSON object expected:
+End of input at character 0 of 
+
+[2/29/2020 | 19:11.30508]
+Error saving image:
+	Server returned HTTP response code: 403 for URL: https://images.barcodelookup.com/2333/23337455-1.jpg
+
+[2/29/2020 | 19:11.32925]
+Error saving image:
+	Server returned HTTP response code: 403 for URL: https://images.barcodelookup.com/4448/44484618-1.jpg
+
+[2/29/2020 | 19:11.35314]
+Error saving image:
+	Server returned HTTP response code: 403 for URL: https://images.barcodelookup.com/13658/136582607-1.jpg
+
+[2/29/2020 | 19:11.37739]
+Error saving image:
+	Server returned HTTP response code: 403 for URL: https://images.barcodelookup.com/3097/30976555-1.jpg
+
+[2/29/2020 | 19:11.40110]
+Error saving image:
+	Server returned HTTP response code: 403 for URL: https://images.barcodelookup.com/3097/30979442-1.jpg
+
+[2/29/2020 | 19:11.42509]
+Error saving image:
+	Server returned HTTP response code: 403 for URL: https://images.barcodelookup.com/3097/30976539-1.jpg
+
+[2/29/2020 | 19:11.44842]
+Error saving image:
+	Server returned HTTP response code: 403 for URL: https://images.barcodelookup.com/3097/30975704-1.jpg
+
+[2/29/2020 | 19:11.46931]
 HTTP error fetching URL
 
-[2/29/2020 | 14:44.16408]
-Error in queryUPCItemDB
-	Request limit reached for UPCItemDB
-	HTTP Response code: 429
-	URL: https://api.upcitemdb.com/prod/trial/lookup?upc=015000140007
-
-[2/29/2020 | 14:44.16584]
+[2/29/2020 | 19:11.4978]
 HTTP error fetching URL
 
-[2/29/2020 | 14:44.17368]
-Error in queryUPCItemDB
-	Request limit reached for UPCItemDB
-	HTTP Response code: 429
-	URL: https://api.upcitemdb.com/prod/trial/lookup?upc=076314302994
-
-[2/29/2020 | 14:44.17544]
+[2/29/2020 | 19:11.55221]
 HTTP error fetching URL
 
-[2/29/2020 | 14:45.17769]
+[2/29/2020 | 19:11.57371]
 HTTP error fetching URL
 
-[2/29/2020 | 14:45.1887]
-Error in queryUPCItemDB
-	Request limit reached for UPCItemDB
-	HTTP Response code: 429
-	URL: https://api.upcitemdb.com/prod/trial/lookup?upc=855380004304
+[2/29/2020 | 19:12.1786]
+Error saving image:
+	Server returned HTTP response code: 403 for URL: https://images.barcodelookup.com/5684/56847067-1.jpg
 
-[2/29/2020 | 14:45.18308]
-HTTP error fetching URL
+[2/29/2020 | 19:12.4103]
+[ERROR] Malformed barcode: 9542031695
 
-[2/29/2020 | 14:45.19167]
-Error in queryUPCItemDB
-	Request limit reached for UPCItemDB
-	HTTP Response code: 429
-	URL: https://api.upcitemdb.com/prod/trial/lookup?upc=855380004878
+[2/29/2020 | 19:12.6521]
+Error saving image:
+	Server returned HTTP response code: 403 for URL: https://images.barcodelookup.com/2664/26643159-1.jpg
 
-[2/29/2020 | 14:45.19420]
-HTTP error fetching URL
+[2/29/2020 | 19:12.8916]
+Error saving image:
+	Server returned HTTP response code: 403 for URL: https://images.barcodelookup.com/2333/23334743-1.jpg
 
-[2/29/2020 | 14:45.20135]
-Error in queryUPCItemDB
-	Request limit reached for UPCItemDB
-	HTTP Response code: 429
-	URL: https://api.upcitemdb.com/prod/trial/lookup?upc=011111062191
-
-[2/29/2020 | 14:45.20325]
-HTTP error fetching URL
-
-[2/29/2020 | 14:45.21400]
-Error in queryUPCItemDB
-	Request limit reached for UPCItemDB
-	HTTP Response code: 429
-	URL: https://api.upcitemdb.com/prod/trial/lookup?upc=037000786658
+[2/29/2020 | 19:12.11334]
+Error saving image:
+	Server returned HTTP response code: 403 for URL: https://images.barcodelookup.com/1703/17035806-1.jpg
 
