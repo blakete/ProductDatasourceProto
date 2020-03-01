@@ -3,6 +3,9 @@ package com.shopiq.backend;
 import com.mongodb.*;
 import com.mongodb.util.JSON;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class JMDBConnector {
 
     MongoClient mongoClient;
@@ -17,11 +20,19 @@ public class JMDBConnector {
 
     public JMDBConnector() {
         try {
+
             mongoClient = new MongoClient("localhost", 27017);
             establishConnection();
             createCollections();
 //            createDocument();
 //            readDocument();
+
+//            createStore();
+//            createOwner();
+//            createManager();
+//            createStoreProduct();
+//            createStoreProductHistory();
+
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -53,6 +64,65 @@ public class JMDBConnector {
         database.createCollection("storeProductHistory", null);
         storeProductHistoryCollection = database.getCollection("storeProductHistory");
 
+        return true;
+    }
+
+    public boolean createStore() {
+        BasicDBObject document = new BasicDBObject();
+        document.put("_id", "1");
+        document.put("name", "convenience_store_1");
+        document.put("owner", "1");
+        document.put("manager", "Mr. Mohammed");
+        storeCollection.insert(document);
+        return true;
+    }
+
+    public boolean createOwner() {
+        BasicDBObject document = new BasicDBObject();
+        document.put("_id", "1");
+        document.put("name", "Mr. Mohammed");
+        document.put("phone", "8603337654");
+        document.put("email", "blakeedwards823@gmail.com");
+        ownerCollection.insert(document);
+        return true;
+    }
+
+    public boolean createManager() {
+        BasicDBObject document = new BasicDBObject();
+        document.put("_id", "1");
+        document.put("name", "Blake Edwards");
+        document.put("phone", "8603337654");
+        document.put("email", "blakeedwards823@gmail.com");
+        managerCollection.insert(document);
+        return true;
+    }
+
+    public boolean createStoreProduct() {
+        BasicDBObject document = new BasicDBObject();
+        document.put("_id", "5e5ae6edf0d8a5f090975a4f");
+        document.put("sku", "111111111111");
+        document.put("price", "4.99");
+        document.put("count", "10");
+        storeProductCollection.insert(document);
+        return true;
+    }
+
+    public boolean createStoreProductHistory() {
+        BasicDBObject document = new BasicDBObject();
+        document.put("_id", "5e5ae6edf0d8a5f090975a4f_1"); // product_store
+
+        BasicDBObject transaction = new BasicDBObject();
+        transaction.put("_id", "5e5ae6edf0d8a5f090975a4f");
+        transaction.put("sku", "111111111111");
+        transaction.put("time", "1583083179023");
+        transaction.put("count", "-2");
+        transaction.put("unitSalePrice", "4.99");
+
+        List<BasicDBObject> history = new ArrayList<>();
+        history.add(transaction);
+
+        document.put("history", history);
+        storeProductHistoryCollection.insert(document);
         return true;
     }
 

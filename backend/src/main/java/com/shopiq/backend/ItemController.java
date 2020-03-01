@@ -35,8 +35,7 @@ public class ItemController {
         System.out.println("\nitem query: " + barcode);
         if (conn.productExists(barcode)) { // product already in database
             System.out.println("Datasource: mongodb");
-            String product = conn.getProduct(barcode);
-            return gson.toJson(product);
+            return conn.getProduct(barcode);
         } else {
             try {
                 ReferenceProduct queryResp = scraper.queryProductInfo(barcode);
