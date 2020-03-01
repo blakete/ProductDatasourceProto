@@ -7,14 +7,19 @@ public class JMDBConnector {
 
     MongoClient mongoClient;
     DB database;
-    DBCollection collection;
+    DBCollection referenceProductCollection;
+    DBCollection storeCollection;
+    DBCollection ownerCollection;
+    DBCollection managerCollection;
+    DBCollection storeProductCollection;
+    DBCollection storeProductHistoryCollection;
 
 
     public JMDBConnector() {
         try {
             mongoClient = new MongoClient("localhost", 27017);
             establishConnection();
-            createCollection();
+            createCollections();
 //            createDocument();
 //            readDocument();
         } catch (Exception e) {
@@ -29,9 +34,25 @@ public class JMDBConnector {
         return false;
     }
 
-    public boolean createCollection() {
-        database.createCollection("products", null);
-        collection = database.getCollection("products");
+    public boolean createCollections() {
+        database.createCollection("referenceProduct", null);
+        referenceProductCollection = database.getCollection("referenceProduct");
+
+        database.createCollection("store", null);
+        storeCollection = database.getCollection("store");
+
+        database.createCollection("owner", null);
+        ownerCollection = database.getCollection("owner");
+
+        database.createCollection("manager", null);
+        managerCollection = database.getCollection("manager");
+
+        database.createCollection("storeProduct", null);
+        storeProductCollection = database.getCollection("storeProduct");
+
+        database.createCollection("storeProductHistory", null);
+        storeProductHistoryCollection = database.getCollection("storeProductHistory");
+
         return true;
     }
 
@@ -39,14 +60,14 @@ public class JMDBConnector {
         BasicDBObject document = new BasicDBObject();
         document.put("name", "Product_1234");
         document.put("barcode", "1234");
-        collection.insert(document);
+        referenceProductCollection.insert(document);
         return true;
     }
 
     public boolean readDocument() {
         BasicDBObject searchQuery = new BasicDBObject();
         searchQuery.put("name", "Product_1234");
-        DBCursor cursor = collection.find(searchQuery);
+        DBCursor cursor = referenceProductCollection.find(searchQuery);
         while (cursor.hasNext()) {
             System.out.println(cursor.next());
         }
@@ -54,14 +75,15 @@ public class JMDBConnector {
     }
 
     public boolean insertJsonDocument(String json) {
+        System.out.println("[INFO] Inserting document in the database");
         DBObject dbObject = (DBObject) JSON.parse(json);
-        collection.insert(dbObject);
+        referenceProductCollection.insert(dbObject);
         return true;
     }
 
     public String getProduct(String barcode) {
         DBObject query = BasicDBObjectBuilder.start().add("upc", barcode).get();
-        DBCursor cursor = collection.find(query);
+        DBCursor cursor = referenceProductCollection.find(query);
         String productDocument = cursor.next().toString();
 //        while(cursor.hasNext()) {
 //            productDocument = cursor.next().toString();
@@ -71,7 +93,7 @@ public class JMDBConnector {
 
     public boolean productExists(String barcode) {
         DBObject query = BasicDBObjectBuilder.start().add("upc", barcode).get();
-        DBCursor cursor = collection.find(query);
+        DBCursor cursor = referenceProductCollection.find(query);
 //        while(cursor.hasNext()){
 //            System.out.println(cursor.next());
 //        }
